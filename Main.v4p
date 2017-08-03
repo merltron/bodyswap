@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\Users\dom\Desktop\BodySwap\Main.v4p" scrollx="0" scrolly="0" systemname="Main" filename="C:\Users\dom\Desktop\MerlinKinect\Main.v4p">
+   <PATCH nodename="D:\GIT\BodySwap\Main.v4p" scrollx="5580" scrolly="-90" systemname="Main" filename="C:\Users\dom\Desktop\MerlinKinect\Main.v4p">
    <BOUNDS type="Window" left="12210" top="255" width="18495" height="13245">
    </BOUNDS>
    <NODE systemname="Kinect2 (Devices Microsoft)" filename="%VVVV%\packs\dx11\nodes\plugins\kinect2\VVVV.DX11.Nodes.Kinect2.dll" nodename="Kinect2 (Devices Microsoft)" componentmode="Hidden" id="0">
@@ -147,7 +147,7 @@
    </PIN>
    <PIN pinname="Loop" visible="1">
    </PIN>
-   <PIN pinname="Filename" visible="1">
+   <PIN pinname="Filename" visible="1" slicecount="1" values="KinectTwoPeople.xef">
    </PIN>
    <PIN pinname="Status" visible="1">
    </PIN>
@@ -247,7 +247,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="13725" top="1245" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="KinectOnePerson.xef">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="KinectTwoPeople.xef">
    </PIN>
    <PIN pinname="Default" slicecount="1" values=".xef">
    </PIN>
@@ -261,8 +261,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="36" srcpinname="Output String" dstnodeid="33" dstpinname="Filename">
-   </LINK>
-   <LINK srcnodeid="36" srcpinname="Output String" dstnodeid="30" dstpinname="Filename">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="37">
    <BOUNDS type="Box" left="11700" top="4635" width="2010" height="525">
@@ -885,5 +883,7 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="128" srcpinname="Device" dstnodeid="127" dstpinname="Mouse">
+   </LINK>
+   <LINK srcnodeid="36" srcpinname="Output String" dstnodeid="30" dstpinname="Filename">
    </LINK>
    </PATCH>
