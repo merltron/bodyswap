@@ -1,0 +1,65 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\Users\dom\Desktop\MerlinKinect\PlayerRGB.v4p" systemname="PlayerRGB" filename="C:\Users\dom\Desktop\MerlinKinect\PlayerRGB.v4p">
+   <NODE systemname="RGB (Kinect2 Microsoft)" filename="%VVVV%\packs\dx11\nodes\plugins\kinect2\VVVV.DX11.Nodes.Kinect2.dll" nodename="RGB (Kinect2 Microsoft)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="1500" top="1520" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1500" top="1520" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Kinect Runtime" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="PlayerToRGBSpace" filename="PlayerToRGBSpace.v4p" nodename="PlayerToRGBSpace.v4p" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="2055" top="1500" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="960" top="-507" width="3955" height="4015">
+   </BOUNDS>
+   <BOUNDS type="Window" left="11415" top="3135" width="10545" height="5670">
+   </BOUNDS>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="SetAlpha (DX11.TextureFX)" filename="%VVVV%\packs\dx11\nodes\texture11\Filter\SetAlpha.tfx" nodename="SetAlpha (DX11.TextureFX)" componentmode="Hidden" id="2">
+   <BOUNDS type="Node" left="1515" top="2270" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Control" visible="1">
+   </PIN>
+   <PIN pinname="Texture In" visible="1">
+   </PIN>
+   <PIN pinname="Technique" slicecount="1" values="Alpha">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="3" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Kinect Runtime|">
+   </PIN>
+   <BOUNDS type="Box" left="1500" top="500" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1500" top="500" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Output Node" dstnodeid="0" dstpinname="Kinect Runtime">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Texture" dstnodeid="2" dstpinname="Texture In">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Texture Out" dstnodeid="2" dstpinname="Control">
+   </LINK>
+   <NODE id="4" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Texture Out|">
+   </PIN>
+   <BOUNDS type="Box" left="1515" top="2870" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1515" top="2870" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Texture Out" dstnodeid="4" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Output Node" dstnodeid="1" dstpinname="Kinect Runtime">
+   </LINK>
+   <BOUNDS type="Window" left="-1" top="-1" width="3555" height="3870">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   </PATCH>

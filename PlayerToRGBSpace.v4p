@@ -1,0 +1,97 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\Users\dom\Desktop\MerlinKinect\PlayerToRGBSpace.v4p" systemname="PlayerToRGBSpace" filename="C:\Users\dom\Desktop\MerlinKinect\PlayerToRGBSpace.v4p">
+   <NODE systemname="Player (Kinect2 Microsoft)" filename="%VVVV%\packs\dx11\nodes\plugins\kinect2\VVVV.DX11.Nodes.Kinect2.dll" nodename="Player (Kinect2 Microsoft)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="1500" top="1500" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1500" top="1500" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Kinect Runtime" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture" visible="1">
+   </PIN>
+   <PIN pinname="Player Color" slicecount="1" values="|1.00000,0.00000,0.01251,0.00000|">
+   </PIN>
+   </NODE>
+   <NODE systemname="DepthRGB (Kinect2 Microsoft)" filename="%VVVV%\packs\dx11\nodes\plugins\kinect2\VVVV.DX11.Nodes.Kinect2.dll" nodename="DepthRGB (Kinect2 Microsoft)" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="2355" top="1830" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2355" top="1830" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Texture" visible="1">
+   </PIN>
+   <PIN pinname="Kinect Runtime" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="FilterPlayerToRGB (DX11.TextureFX)" filename="..\..\Downloads\kinect_toolbox\kinect_toolbox\dx11\FilterPlayerToRGB.tfx" nodename="FilterPlayerToRGB (DX11.TextureFX)" componentmode="Hidden" id="2">
+   <BOUNDS type="Node" left="1500" top="2415" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture In" visible="1">
+   </PIN>
+   <PIN pinname="PlayerTexture" visible="1">
+   </PIN>
+   <PIN pinname="DepthRGBMapTexture" visible="1">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Texture" dstnodeid="2" dstpinname="Texture In">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Texture" dstnodeid="2" dstpinname="PlayerTexture">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Texture" dstnodeid="2" dstpinname="DepthRGBMapTexture">
+   </LINK>
+   <NODE id="3" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Texture Out|">
+   </PIN>
+   <BOUNDS type="Box" left="1500" top="3015" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1500" top="3015" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Texture Out" dstnodeid="3" dstpinname="Input Node">
+   </LINK>
+   <NODE id="4" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Kinect Runtime|">
+   </PIN>
+   <BOUNDS type="Box" left="1500" top="500" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1500" top="500" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Output Node" dstnodeid="0" dstpinname="Kinect Runtime">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Output Node" dstnodeid="1" dstpinname="Kinect Runtime">
+   </LINK>
+   <BOUNDS type="Window" left="11415" top="3135" width="10545" height="5670">
+   </BOUNDS>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="6" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="3180" top="2355" width="5340" height="480">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3180" top="2355" width="5340" height="480">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Got this from &cr;&lf;https://discourse.vvvv.org/t/aligning-rgb-and-depth-kinect2/13009/16|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="7" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="8640" top="2580" width="1215" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8640" top="2580" width="1215" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Kinect Toolbox|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   </PATCH>

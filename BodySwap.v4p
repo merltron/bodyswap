@@ -1,0 +1,335 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\Users\dom\Desktop\MerlinKinect\BodySwap.v4p" scrollx="0" scrolly="-90" systemname="BodySwap" filename="C:\Users\dom\Desktop\MerlinKinect\BodySwap.v4p">
+   <NODE id="0" systemname="Quad (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Quad (DX11.Layer)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Node" left="2685" top="5495" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2685" top="5495" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Texture Transform" visible="1" slicecount="1" pintype="Input" values="||">
+   </PIN>
+   <PIN pinname="Texture" slicecount="1" visible="1" pintype="Input" values="||">
+   </PIN>
+   <PIN pinname="Render State" visible="1" pintype="Input" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Transform" slicecount="1" visible="1" pintype="Input" values="||">
+   </PIN>
+   <BOUNDS type="Window" left="0" top="0" width="6000" height="4500">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Sampler State" pintype="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Color" pintype="Input" visible="1" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Enabled" pintype="Input" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Window Handle" pintype="Output">
+   </PIN>
+   <PIN pinname="Query" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE id="1" systemname="GetBones" filename="GetBones.v4p" nodename="GetBones.v4p" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <PIN pinname="Input" visible="1" slicecount="100" values="-0.0200814565022787,-0.0970172458224826,-0.0188174565633138,0.034266436541522,-0.0174987157185872,0.162895598234954,-0.0237014134724935,0.224012219464337,-0.0604720115661621,0.12013660007053,-0.0937785148620606,0.0376995510525173,-0.101211675008138,-0.0497670491536458,-0.100722535451253,-0.0802341037326389,0.0202122052510579,0.111932260018808,0.052025032043457,0.037135343198423,0.04748109181722,0.11000247531467,0.0399713516235352,0.144372954191985,-0.0393876075744629,-0.0971975255895544,-0.0490110079447428,-0.254814317491319,-0.0504706064860026,-0.39944005895544,-0.0581811269124349,-0.448872658058449,-0.00048147837320961,-0.0968588369864005,0.00894482930501306,-0.237627100061487,0.00588544209798181,-0.397115919325087,0.0180730183919271,-0.443865288628472,-0.0178370793660482,0.130980428059896,-0.0989317893981934,-0.119560015643084,-0.0903071085611979,-0.0722143102575232,0.0341466903686524,0.180023334644459,0.0507895151774088,0.145551610876013,0.248992474873861,-0.0700525919596354,0.255168469746908,0.07073324697989,0.261506334940593,0.211324536358869,0.250428454081218,0.280069026240596,0.219353993733724,0.144463150589554,0.19511833190918,0.0474086620189526,0.137169075012207,0.007143317328559,0.122611999511719,0.00681016710069449,0.303257433573405,0.159112605342159,0.348101806640625,0.0857443067762587,0.415812047322591,0.0105351200810185,0.40942497253418,0.0343849747269241,0.23138058980306,-0.0713003087926794,0.216374651590983,-0.226254328974971,0.217668088277181,-0.400508626302083,0.20837999979655,-0.449486852575231,0.267886479695638,-0.0687631677698206,0.286665789286296,-0.211648390028212,0.281717809041341,-0.430790993019387,0.28234977722168,-0.485351901584201,0.259899965922038,0.176178035029659,0.105385398864746,0.000458102756076384,0.119809850056966,0.026260828088831,0.409558804829915,0.035755694354022,0.407916704813639,0.0372125413682726">
+   </PIN>
+   <BOUNDS type="Node" left="720" top="1515" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="0" top="0" width="5475" height="4165">
+   </BOUNDS>
+   <PIN pinname="To" visible="1">
+   </PIN>
+   <PIN pinname="From" visible="1">
+   </PIN>
+   <BOUNDS type="Window" left="12060" top="3930" width="11115" height="10440">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Evaluate" pintype="Input" visible="-1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Window Handle" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="Patch" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE id="2" componentmode="Hidden" systemname="BoneToTransform" filename="BoneToTransform.v4p" nodename="BoneToTransform.v4p" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Node" left="2220" top="3995" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="0" top="1125" width="8490" height="5770">
+   </BOUNDS>
+   <BOUNDS type="Window" left="12765" top="5055" width="9735" height="6630">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="Rotation" visible="1">
+   </PIN>
+   <PIN pinname="Position" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Evaluate" pintype="Input" visible="-1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Window Handle" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="Patch" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE id="3" systemname="BoneToTransform" filename="BoneToTransform.v4p" nodename="BoneToTransform.v4p" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <PIN pinname="Transform Out" visible="1" pintype="Output">
+   </PIN>
+   <BOUNDS type="Node" left="7290" top="2155" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3045" top="0" width="8490" height="5770">
+   </BOUNDS>
+   <BOUNDS type="Window" left="12765" top="5055" width="9735" height="6630">
+   </BOUNDS>
+   <PIN pinname="Position" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Rotation" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="FromXY" pintype="Input" visible="1">
+   </PIN>
+   <PIN pinname="ToXY" pintype="Input" visible="1">
+   </PIN>
+   <PIN pinname="Evaluate" pintype="Input" visible="-1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Window Handle" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="Patch" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE id="4" systemname="GetBones" filename="GetBones.v4p" nodename="GetBones.v4p" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Node" left="7305" top="1640" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4568" top="0" width="5475" height="4165">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" pintype="Input" slicecount="1" values="0">
+   </PIN>
+   <BOUNDS type="Window" left="16725" top="1725" width="7620" height="5460">
+   </BOUNDS>
+   <PIN pinname="From" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="To" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Evaluate" pintype="Input" visible="-1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Window Handle" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="Patch" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE id="5" systemname="RenderState (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="RenderState (DX11)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Node" left="2685" top="5045" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2685" top="5045" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Blend Mode" slicecount="1" pintype="Input" visible="1" values="Blend">
+   </PIN>
+   <PIN pinname="Render State" visible="1" pintype="Output">
+   </PIN>
+   <BOUNDS type="Window" left="0" top="0" width="6000" height="4500">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Stencil Reference Value" pintype="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Blend Factor" pintype="Input" visible="1" slicecount="1" values="|0.00000,0.00000,0.00000,0.00000|">
+   </PIN>
+   <PIN pinname="Rasterizer Mode" pintype="Input" visible="1" slicecount="1" values="BackCullSimple">
+   </PIN>
+   <PIN pinname="Depth Stencil Mode" pintype="Input" visible="1" slicecount="1" values="LessRead">
+   </PIN>
+   <PIN pinname="Window Handle" pintype="Output">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE id="6" systemname="PlayerRGB" filename="PlayerRGB.v4p" nodename="PlayerRGB.v4p" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Node" left="4615" top="2873" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3420" top="938" width="3555" height="3870">
+   </BOUNDS>
+   <BOUNDS type="Window" left="-1" top="-1" width="3555" height="3870">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Evaluate" pintype="Input" visible="-1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Window Handle" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="Patch" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE id="7" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Input">
+   </PIN>
+   <BOUNDS type="Box" left="720" top="515" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="720" top="515" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Input">
+   </LINK>
+   <NODE id="8" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="From">
+   </PIN>
+   <BOUNDS type="Box" left="720" top="6095" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="720" top="6095" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="From" dstnodeid="8" dstpinname="Y Input Value">
+   </LINK>
+   <NODE id="9" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="To">
+   </PIN>
+   <BOUNDS type="Box" left="1620" top="6095" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1620" top="6095" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="To" dstnodeid="9" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Render State" dstnodeid="0" dstpinname="Render State">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Texture Out" dstnodeid="0" dstpinname="Texture">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Transform Out" dstnodeid="0" dstpinname="Texture Transform">
+   </LINK>
+   <NODE id="10" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Layer">
+   </PIN>
+   <BOUNDS type="Box" left="2685" top="6095" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2685" top="6095" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Layer" dstnodeid="10" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="From" dstnodeid="2" dstpinname="FromXY">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="To" dstnodeid="2" dstpinname="ToXY">
+   </LINK>
+   <NODE id="11" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Kinect Runtime|">
+   </PIN>
+   <BOUNDS type="Box" left="4615" top="515" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4615" top="515" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="11" srcpinname="Output Node" dstnodeid="6" dstpinname="Kinect Runtime">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="From" dstnodeid="3" dstpinname="FromXY">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="To" dstnodeid="3" dstpinname="ToXY">
+   </LINK>
+   <NODE id="12" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Input 1|">
+   </PIN>
+   <BOUNDS type="Box" left="7305" top="515" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7305" top="515" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="12" srcpinname="Y Output Value" dstnodeid="4" dstpinname="Input">
+   </LINK>
+   <BOUNDS type="Window" left="13665" top="3060" width="9705" height="6735">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <LINK srcnodeid="2" srcpinname="Transform Out" dstnodeid="0" dstpinname="Transform">
+   </LINK>
+   <NODE systemname="Translate (Transform)" nodename="Translate (Transform)" componentmode="Hidden" id="15">
+   <BOUNDS type="Node" left="2760" top="2475" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="XYZ" visible="1">
+   </PIN>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="15" srcpinname="Transform Out" dstnodeid="2" dstpinname="Transform In">
+   </LINK>
+   <NODE systemname="Vector (2d Split)" nodename="Vector (2d Split)" componentmode="Hidden" id="17">
+   <BOUNDS type="Node" left="3015" top="2085" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   <PIN pinname="XY" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="17" srcpinname="X" dstnodeid="15" dstpinname="X">
+   </LINK>
+   <LINK srcnodeid="17" srcpinname="Y" dstnodeid="15" dstpinname="Y">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="18">
+   <BOUNDS type="Box" left="2700" top="1230" width="795" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2700" top="1230" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="0.34,0.2">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="18" srcpinname="Y Output Value" dstnodeid="17" dstpinname="XY">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="19">
+   <BOUNDS type="Node" left="3540" top="1230" width="1980" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3540" top="1230" width="1980" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Skeleton 1 to Skeleton 2|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   </PATCH>
