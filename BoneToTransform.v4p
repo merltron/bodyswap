@@ -210,7 +210,7 @@
    </LINK>
    <LINK srcnodeid="7" srcpinname="Output" dstnodeid="1" dstpinname="Y Input Value">
    </LINK>
-   <BOUNDS type="Window" left="11265" top="5115" width="9735" height="6630">
+   <BOUNDS type="Window" left="11670" top="9135" width="9735" height="6630">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
