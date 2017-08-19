@@ -1,4 +1,4 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
    <PATCH nodename="D:\_GIT\bodyswap\BoneToTransform.v4p" systemname="BoneToTransform" filename="C:\Users\dom\Desktop\MerlinKinect\BoneToTransform.v4p" scrollx="0" scrolly="-360">
    <NODE systemname="Transform (Transform 2d Vector)" nodename="Transform (Transform 2d Vector)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="1500" top="4170" width="100" height="100">
@@ -15,9 +15,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="5415" top="3150" width="795" height="240">
+   <BOUNDS type="Box" left="5460" top="2970" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="5415" top="3150" width="0" height="0">
+   <BOUNDS type="Node" left="5460" top="2970" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.01">
    </PIN>
@@ -26,22 +26,6 @@
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="2" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="3120" top="3240" width="795" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="3120" top="3240" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="0.29,0.02">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Vector Size" slicecount="1" values="2">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="2">
    </PIN>
    </NODE>
    <NODE systemname="Add (Value)" nodename="Add (Value)" componentmode="Hidden" id="3">
@@ -121,7 +105,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Length (2d)" filename="%VVVV%\lib\nodes\modules\2D\Length (2d).v4p" nodename="Length (2d)" componentmode="Hidden" id="10">
-   <BOUNDS type="Node" left="3225" top="1905" width="100" height="100">
+   <BOUNDS type="Node" left="2850" top="1830" width="100" height="100">
    </BOUNDS>
    <PIN pinname="XY" visible="1">
    </PIN>
@@ -129,7 +113,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Vector (2d Join)" nodename="Vector (2d Join)" componentmode="Hidden" id="11">
-   <BOUNDS type="Node" left="3165" top="2490" width="100" height="100">
+   <BOUNDS type="Node" left="2865" top="2325" width="100" height="100">
    </BOUNDS>
    <PIN pinname="X" visible="1">
    </PIN>
@@ -139,11 +123,11 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="12" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="4065" top="2400" width="795" height="240">
+   <BOUNDS type="Box" left="3540" top="2295" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="4065" top="2400" width="0" height="0">
+   <BOUNDS type="Node" left="3540" top="2295" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.07">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -151,10 +135,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="4" srcpinname="Output" dstnodeid="0" dstpinname="TranslateXY">
-   </LINK>
-   <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="0" dstpinname="ScaleXY">
-   </LINK>
-   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Rotate">
    </LINK>
    <NODE id="13" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Transform Out|">
@@ -190,8 +170,6 @@
    </LINK>
    <LINK srcnodeid="5" srcpinname="Y Output Value" dstnodeid="4" dstpinname="Input 2">
    </LINK>
-   <LINK srcnodeid="11" srcpinname="XY" dstnodeid="2" dstpinname="Y Input Value">
-   </LINK>
    <LINK srcnodeid="10" srcpinname="Length" dstnodeid="11" dstpinname="X">
    </LINK>
    <LINK srcnodeid="12" srcpinname="Y Output Value" dstnodeid="11" dstpinname="Y">
@@ -210,7 +188,7 @@
    </LINK>
    <LINK srcnodeid="7" srcpinname="Output" dstnodeid="1" dstpinname="Y Input Value">
    </LINK>
-   <BOUNDS type="Window" left="11670" top="9135" width="9735" height="6630">
+   <BOUNDS type="Window" left="11265" top="2385" width="13155" height="12270">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -225,5 +203,47 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="18" srcpinname="Output Node" dstnodeid="0" dstpinname="Transform In">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Output" dstnodeid="0" dstpinname="Rotate">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="19">
+   <BOUNDS type="Node" left="7830" top="735" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7830" top="735" width="2025" height="7725">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="26">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="52" values="0.133506045703204,0.07,0.0664311487181972,0.04,0.04667493996081,0.04,0.141357628349843,0.06,0.102123083884488,0.05,0.0881754193839439,0.06,0.0887423982979948,0.07,0.0403936886097067,0.07,0.12377911479446,0.04,0.104166439474745,0.03,0.0512962360938724,0.03,0.0417318092661495,0.05,0.0211428235920612,0.07,0.0482417952846366,0.07,0.0857157244842395,0.07,0.112894511877023,0.07,0.027457569260466,0.07,0.0295072613394086,0.07,0.0289703352811074,0.07,0.128759948654,0.07,0.116074459762834,0.07,0.0366254589158118,0.07,0.0764976488507682,0.05,0.158063943749036,0.07,0.04,0.07,0.05,0.07" visible="1">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0|">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Add (Value)" nodename="Add (Value)" componentmode="Hidden" id="20">
+   <BOUNDS type="Node" left="2835" top="3000" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1" slicecount="52" values="0.03,0,0.05,-0.03,0.03,-0.03,0.02,-0.01,0.01,-0.02,0.05,-0.01,0.01,0,0,0,0.04,-0.03,0.02,-0.04,0.02,-0.04,0.01,-0.02,0,0,0.01,0,0,0,0.02,0,0,0,0,0,0.02,0,0,0,0.03,0,0,0,0.05,-0.02,0.1,0,0.04,0,0.05,0">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="11" srcpinname="XY" dstnodeid="20" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="20" srcpinname="Output" dstnodeid="0" dstpinname="ScaleXY">
+   </LINK>
+   <LINK srcnodeid="19" srcpinname="Y Output Value" dstnodeid="20" dstpinname="Input 2">
    </LINK>
    </PATCH>

@@ -429,7 +429,7 @@
    </PIN>
    </NODE>
    <NODE id="13" componentmode="Hidden" systemname="BodySwap" filename="BodySwap.v4p" nodename="BodySwap.v4p">
-   <BOUNDS type="Window" left="2610" top="1035" width="15840" height="13035">
+   <BOUNDS type="Window" left="6855" top="735" width="15840" height="13035">
    </BOUNDS>
    <BOUNDS type="Node" left="7529" top="5426" width="0" height="0">
    </BOUNDS>
@@ -568,7 +568,7 @@
    </LINK>
    <LINK srcnodeid="6" srcpinname="Output" dstnodeid="13" dstpinname="SkeletonJoints2">
    </LINK>
-   <BOUNDS type="Window" left="9645" top="7185" width="17835" height="9990">
+   <BOUNDS type="Window" left="9240" top="1050" width="17835" height="9990">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>

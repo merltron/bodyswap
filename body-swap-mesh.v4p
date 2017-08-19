@@ -181,7 +181,7 @@
    </PIN>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="9645" top="7185" width="17835" height="9990">
+   <BOUNDS type="Window" left="9240" top="1050" width="17835" height="9990">
    </BOUNDS>
    <PIN pinname="JointPositionRGBXY" visible="1">
    </PIN>

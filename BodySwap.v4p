@@ -65,7 +65,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="2580" top="2025" width="8490" height="5770">
    </BOUNDS>
-   <BOUNDS type="Window" left="11265" top="5115" width="9735" height="6630">
+   <BOUNDS type="Window" left="11265" top="2385" width="13155" height="12270">
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
@@ -195,9 +195,9 @@
    <NODE id="10" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Layer">
    </PIN>
-   <BOUNDS type="Box" left="4710" top="7400" width="2370" height="285">
+   <BOUNDS type="Box" left="3150" top="7655" width="2370" height="285">
    </BOUNDS>
-   <BOUNDS type="Node" left="4710" top="7400" width="750" height="240">
+   <BOUNDS type="Node" left="3150" top="7655" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="0" srcpinname="Layer" dstnodeid="10" dstpinname="Input Node">
@@ -226,7 +226,7 @@
    </NODE>
    <LINK srcnodeid="12" srcpinname="Y Output Value" dstnodeid="4" dstpinname="Input">
    </LINK>
-   <BOUNDS type="Window" left="10275" top="1125" width="15840" height="13035">
+   <BOUNDS type="Window" left="6855" top="735" width="15840" height="13035">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -349,9 +349,9 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Player RGB Texture|">
    </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="31" srcpinname="Output Node" dstnodeid="0" dstpinname="Texture">
-   </LINK>
    <LINK srcnodeid="23" srcpinname="Output" dstnodeid="30" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="30" srcpinname="Output" dstnodeid="17" dstpinname="XY">
@@ -370,6 +370,142 @@
    <BOUNDS type="Box" left="1650" top="4590" width="2955" height="270">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|Conntect if you want to swap position &gt;|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="Hidden" id="34">
+   <BOUNDS type="Node" left="6675" top="8190" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6675" top="8190" width="6000" height="4500">
+   </BOUNDS>
+   <BOUNDS type="Window" left="1860" top="2685" width="6240" height="6915">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   <PIN pinname="View" visible="1">
+   </PIN>
+   <PIN pinname="Enabled" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Camera (Transform 2d)" filename="%VVVV%\lib\packs\VL.EditingFramework.0.55.43-g436959e253\vvvv\nodes\modules\Camera (Transform 2d).v4p" nodename="Camera (Transform 2d)" componentmode="Hidden" id="35">
+   <BOUNDS type="Node" left="9150" top="6420" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="View" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="35" srcpinname="View" dstnodeid="34" dstpinname="View">
+   </LINK>
+   <LINK srcnodeid="31" srcpinname="Output Node" dstnodeid="0" dstpinname="Texture">
+   </LINK>
+   <NODE systemname="Quad (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Quad (DX11.Layer)" componentmode="Hidden" id="36">
+   <BOUNDS type="Node" left="6270" top="6810" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6270" top="6810" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Transform" visible="1">
+   </PIN>
+   <PIN pinname="Texture Transform" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Color" visible="1" slicecount="1" values="|0.99630,0.99630,0.99630,1.00000|">
+   </PIN>
+   <PIN pinname="Render State" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Transform Out" dstnodeid="36" dstpinname="Transform">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Transform Out" dstnodeid="36" dstpinname="Texture Transform">
+   </LINK>
+   <NODE systemname="Group (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Group (DX11.Layer)" componentmode="Hidden" id="37">
+   <BOUNDS type="Node" left="6825" top="7665" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6825" top="7665" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Layer 1" visible="1">
+   </PIN>
+   <PIN pinname="Layer 2" visible="1">
+   </PIN>
+   <PIN pinname="Layer Out" visible="1">
+   </PIN>
+   <PIN pinname="Render State" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Layer" dstnodeid="37" dstpinname="Layer 1">
+   </LINK>
+   <LINK srcnodeid="36" srcpinname="Layer" dstnodeid="37" dstpinname="Layer 2">
+   </LINK>
+   <LINK srcnodeid="37" srcpinname="Layer Out" dstnodeid="34" dstpinname="Layers">
+   </LINK>
+   <NODE systemname="HSV (Color Join Picker)" filename="%VVVV%\lib\nodes\modules\Color\HSV (Color Join Picker).v4p" nodename="HSV (Color Join Picker)" componentmode="Hidden" id="39">
+   <BOUNDS type="Node" left="7530" top="6390" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Alpha" slicecount="1" values="14">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="39" srcpinname="Output" dstnodeid="36" dstpinname="Color">
+   </LINK>
+   <NODE systemname="RenderState (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="RenderState (DX11)" componentmode="Hidden" id="40">
+   <BOUNDS type="Node" left="6405" top="5880" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6405" top="5880" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Render State" visible="1">
+   </PIN>
+   <PIN pinname="Blend Mode" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="40" srcpinname="Render State" dstnodeid="36" dstpinname="Render State">
+   </LINK>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="41">
+   <BOUNDS type="Box" left="7500" top="5280" width="1590" height="270">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7500" top="5280" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="Blend">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="Disabled">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="41" srcpinname="Output Enum" dstnodeid="40" dstpinname="Blend Mode">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="42">
+   <BOUNDS type="Box" left="7920" top="7485" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7920" top="7485" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="42" srcpinname="Y Output Value" dstnodeid="34" dstpinname="Enabled">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="43">
+   <BOUNDS type="Node" left="8655" top="8205" width="4545" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8655" top="8205" width="4545" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Only helper to adjust sizes of quads. Delete before finishing.|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
