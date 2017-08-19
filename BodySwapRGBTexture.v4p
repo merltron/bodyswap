@@ -1,17 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\_GIT\bodyswap\BodySwapRGBTexture.v4p" systemname="BodySwapRGBTexture" filename="D:\_GIT\bodyswap\BodySwapRGBTexture.v4p" scrollx="5790" scrolly="360">
-   <NODE systemname="NormalizeFromRGB" filename="NormalizeFromRGB.v4p" nodename="NormalizeFromRGB.v4p" componentmode="Hidden" id="1">
-   <BOUNDS type="Node" left="4230" top="1950" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="2213" top="1635" width="4035" height="4315">
-   </BOUNDS>
-   <BOUNDS type="Window" left="10365" top="3225" width="4035" height="6855">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
+   <PATCH nodename="D:\_GIT\bodyswap\BodySwapRGBTexture.v4p" systemname="BodySwapRGBTexture" filename="D:\_GIT\bodyswap\BodySwapRGBTexture.v4p" scrollx="0" scrolly="-360">
    <NODE id="2" nodename="IOBox (Value Advanced)" componentmode="InABox" systemname="IOBox (Value Advanced)" hiddenwhenlocked="0" managers="">
    <BOUNDS type="Box" left="4560" top="2790" width="795" height="240">
    </BOUNDS>
@@ -349,7 +337,7 @@
    </PIN>
    <BOUNDS type="Node" left="7500" top="4035" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="100" pintype="Input" values="922.660400390625,641.140380859375,924.866149902344,501.536743164063,927.619934082031,364.537078857422,918.796997070312,298.545440673828,844.954467773437,409.031524658203,766.678894042969,471.849853515625,721.861450195313,379.582641601562,718.924133300781,343.201477050781,1006.90985107422,416.327606201172,1070.51965332031,510.241821289063,1073.9345703125,636.63916015625,1068.34582519531,670.583190917969,885.986938476563,641.055786132813,866.4990234375,817.110473632813,864.569580078125,969.13037109375,848.693603515625,1026.02014160156,959.96044921875,641.085205078125,978.104431152344,797.962280273437,971.713562011719,971.074462890625,995.594787597656,1021.06719970703,926.890808105469,398.546142578125,714.177612304687,303.903625488281,742.13134765625,336.612487792969,1069.70288085938,710.259643554687,1088.56018066406,673.301879882813,1308.04382324219,611.689819335938,1313.79406738281,472.368713378906,1319.62109375,335.243591308594,1312.56115722656,260.920257568359,1235.64587402344,389.661041259766,1175.294921875,456.366027832031,1197.23718261719,482.717864990234,1233.02270507812,500.782257080078,1396.57373046875,392.596343994141,1473.54089355469,461.695709228516,1552.14709472656,522.459167480469,1603.67028808594,561.169982910156,1273.35009765625,612.343933105469,1268.9375,776.56982421875,1277.140625,968.099731445313,1266.65954589844,1015.69946289062,1343.97338867188,611.070129394531,1389.82885742188,777.868713378906,1397.19592285156,979.334106445313,1403.46716308594,1033.796875,1318.146484375,369.333526611328,1241.03015136719,511.807006835937,1212.53405761719,502.363830566406,1625.19580078125,590.785888671875,1584.52233886719,565.142761230469">
+   <PIN pinname="Input" visible="1" slicecount="100" pintype="Input" values="5.70426241556803,2.37135767053675,5.71136919657389,3.17280296043113,5.71502621968587,4.02215519657841,5.72861035664876,4.47359777379919,5.42791938781738,3.85108891239873,5.13883972167969,3.46768640588831,5.22274049123128,4.08772334346065,5.25186061859131,4.25675964355469,6.05572382609049,3.86440983525029,6.42723019917806,3.64776159215857,6.30888239542643,4.17012306495949,6.27593739827474,4.30259195963542,5.57633145650228,2.39057978877315,5.51634534200033,1.69407823350694,5.4994691212972,1.09239592375579,5.41834322611491,0.850082962601273,5.83356539408366,2.35658433702257,5.88927968343099,1.70506795247396,5.88879458109538,1.1053783275463,5.96562004089356,0.883410418475116,5.71444257100423,3.80497007016782,5.28429635365804,4.47510048195168,5.36254501342773,4.24468259458189,6.23044268290202,4.51077609592014,6.18265787760417,4.18642905906395,4.23417059580485,2.57454257541233,4.19950167338053,3.3316571270978,4.16456540425618,4.13679504394531,4.14088249206543,4.64846632215712,3.87646516164144,3.91107742874711,3.69281514485677,3.26858407479745,3.54240385691325,2.56684423376013,3.53027057647705,2.47862243652344,4.46448993682861,3.83710621021412,4.69414520263672,3.14875510886863,4.72671635945638,2.35996387622975,4.72249031066895,2.14604639123987,4.11571884155273,2.56655940303096,4.06193701426188,1.8352129900897,4.13508383433024,1.20564778645833,4.10854117075602,0.880234329788773,4.35468673706055,2.58065343786169,4.47872257232666,1.78114318847656,4.51457595825195,1.15944078233507,4.49597803751628,0.830040260597512,4.17323271433512,3.93061093930845,3.50899187723796,2.30310736762153,3.59039465586344,2.46050290708189,4.73040231068929,1.90039458098235,4.79143810272217,2.17922012894242">
    </PIN>
    <PIN pinname="Bin Size" visible="1" pintype="Input">
    </PIN>
@@ -560,10 +548,6 @@
    </LINK>
    <LINK srcnodeid="7" srcpinname="Output" dstnodeid="12" dstpinname="SkeletonJoints2">
    </LINK>
-   <LINK srcnodeid="14" srcpinname="Texture Out" dstnodeid="12" dstpinname="Player RGB Texture">
-   </LINK>
-   <LINK srcnodeid="1" srcpinname="Output" dstnodeid="6" dstpinname="Input">
-   </LINK>
    <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Bin Size">
    </LINK>
    <LINK srcnodeid="3" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Index">
@@ -576,8 +560,6 @@
    </LINK>
    <LINK srcnodeid="17" srcpinname="Buffers" dstnodeid="16" dstpinname="Input Node">
    </LINK>
-   <LINK srcnodeid="1" srcpinname="Output" dstnodeid="7" dstpinname="Input">
-   </LINK>
    <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="7" dstpinname="Bin Size">
    </LINK>
    <LINK srcnodeid="5" srcpinname="Y Output Value" dstnodeid="7" dstpinname="Index">
@@ -586,9 +568,7 @@
    </LINK>
    <LINK srcnodeid="6" srcpinname="Output" dstnodeid="13" dstpinname="SkeletonJoints2">
    </LINK>
-   <LINK srcnodeid="14" srcpinname="Texture Out" dstnodeid="13" dstpinname="Player RGB Texture">
-   </LINK>
-   <BOUNDS type="Window" left="1575" top="1260" width="6555" height="9990">
+   <BOUNDS type="Window" left="9645" top="7185" width="17835" height="9990">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -623,9 +603,9 @@
    <LINK srcnodeid="28" srcpinname="XY" dstnodeid="17" dstpinname="Texture SizeXY" hiddenwhenlocked="1">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="31">
-   <BOUNDS type="Box" left="4410" top="390" width="795" height="480">
+   <BOUNDS type="Box" left="150" top="225" width="795" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="4410" top="390" width="0" height="0">
+   <BOUNDS type="Node" left="150" top="225" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="2" visible="1" values="1163.76940917969,949.379150390625">
    </PIN>
@@ -644,14 +624,12 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="31" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Input">
-   </LINK>
-   <NODE systemname="Preview (DX11.Texture)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Preview (DX11.Texture)" componentmode="InAWindow" id="34">
+   <NODE systemname="Preview (DX11.Texture)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Preview (DX11.Texture)" componentmode="Hidden" id="34" stayontop="1">
    <BOUNDS type="Node" left="4185" top="8265" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="4185" top="8265" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="13920" top="3450" width="12945" height="10950">
+   <BOUNDS type="Window" left="13170" top="3780" width="12945" height="10950">
    </BOUNDS>
    <PIN pinname="Texture In" visible="1">
    </PIN>
@@ -681,5 +659,37 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="37" srcpinname="Y Output Value" dstnodeid="36" dstpinname="XYZ">
+   </LINK>
+   <NODE systemname="Preview (DX11.Texture)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Preview (DX11.Texture)" componentmode="Hidden" id="38">
+   <BOUNDS type="Node" left="1140" top="5370" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1140" top="5370" width="6000" height="4500">
+   </BOUNDS>
+   <BOUNDS type="Window" left="4170" top="7590" width="6240" height="5085">
+   </BOUNDS>
+   <PIN pinname="Texture In" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="14" srcpinname="Texture Out" dstnodeid="38" dstpinname="Texture In">
+   </LINK>
+   <LINK srcnodeid="14" srcpinname="Texture Out" dstnodeid="13" dstpinname="Player RGB Texture">
+   </LINK>
+   <LINK srcnodeid="14" srcpinname="Texture Out" dstnodeid="12" dstpinname="Player RGB Texture">
+   </LINK>
+   <NODE systemname="NormalizeFromRGB" filename="NormalizeFromRGB.v4p" nodename="NormalizeFromRGB.v4p" componentmode="Hidden" id="39">
+   <BOUNDS type="Node" left="4260" top="2100" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <BOUNDS type="Window" left="9210" top="3360" width="4035" height="6855">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="31" srcpinname="Y Output Value" dstnodeid="39" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="39" srcpinname="Output" dstnodeid="6" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="39" srcpinname="Output" dstnodeid="7" dstpinname="Input">
    </LINK>
    </PATCH>
