@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\_GIT\bodyswap\body-swap-mesh.v4p" scrollx="0" scrolly="0" systemname="body-swap-mesh" filename="D:\_GIT\bodyswap\body-swap-mesh.v4p">
-   <BOUNDS type="Window" left="14160" top="270" width="18600" height="14445">
+   <PATCH nodename="D:\_GIT\bodyswap\body-swap-mesh.v4p" scrollx="1485" scrolly="315" systemname="body-swap-mesh" filename="D:\_GIT\bodyswap\body-swap-mesh.v4p">
+   <BOUNDS type="Window" left="7590" top="270" width="18600" height="14445">
    </BOUNDS>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="3" systemname="IOBox (String)">
    <BOUNDS type="Node" left="3270" top="555" width="5100" height="450">
@@ -43,11 +43,11 @@
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
    <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" id="15" hiddenwhenlocked="0">
-   <BOUNDS type="Node" left="3795" top="11835" width="100" height="100">
+   <BOUNDS type="Node" left="4275" top="12330" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="3795" top="11835" width="6000" height="4500">
+   <BOUNDS type="Box" left="4275" top="12330" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="225" top="780" width="13665" height="8700">
+   <BOUNDS type="Window" left="-3135" top="5010" width="13665" height="8700">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>
@@ -59,17 +59,19 @@
    </PIN>
    <PIN pinname="Aspect Ratio" visible="1" slicecount="1" values="||">
    </PIN>
+   <PIN pinname="Background Color" visible="1" slicecount="1" values="|0.00000,0.00000,0.00000,1.00000|">
+   </PIN>
    </NODE>
    <NODE systemname="Group (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Group (DX11.Layer)" componentmode="Hidden" id="13" hiddenwhenlocked="1">
-   <BOUNDS type="Node" left="4605" top="10590" width="6465" height="270">
+   <BOUNDS type="Node" left="5055" top="10455" width="6465" height="270">
    </BOUNDS>
    <PIN pinname="Layer 2" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Layer 1" visible="1">
+   <PIN pinname="Layer 1" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Layer Out" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="4605" top="10590">
+   <BOUNDS type="Box" left="5055" top="10455">
    </BOUNDS>
    <PIN pinname="Input Count" slicecount="1" values="8">
    </PIN>
@@ -115,11 +117,11 @@
    </PIN>
    </NODE>
    <NODE systemname="Camera (Transform Orbit)" filename="%VVVV%\lib\packs\VL.EditingFramework.0.55.43-g436959e253\vvvv\nodes\modules\Camera (Transform Orbit).v4p" nodename="Camera (Transform Orbit)" componentmode="Hidden" id="41">
-   <BOUNDS type="Node" left="5040" top="11400" width="100" height="100">
+   <BOUNDS type="Node" left="6630" top="11145" width="100" height="100">
    </BOUNDS>
    <PIN pinname="View Projection" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="5040" top="11400">
+   <BOUNDS type="Box" left="6630" top="11145">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="41" srcpinname="View Projection" dstnodeid="15" dstpinname="View">
@@ -610,14 +612,10 @@
    </LINK>
    <LINK srcnodeid="264" srcpinname="Output Node" dstnodeid="247" dstpinname="Transform In">
    </LINK>
-   <LINK srcnodeid="245" srcpinname="HelpLayer" dstnodeid="13" dstpinname="Layer 3" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="247" srcpinname="HelpLayer" dstnodeid="13" dstpinname="Layer 4" hiddenwhenlocked="1">
-   </LINK>
    <NODE systemname="HelperScene" filename="HelperScene.v4p" componentmode="Hidden" id="265" nodename="HelperScene.v4p">
-   <BOUNDS type="Node" left="2475" top="8685" width="100" height="100">
+   <BOUNDS type="Node" left="3375" top="7980" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="2475" top="8685" width="4800" height="3600">
+   <BOUNDS type="Box" left="3375" top="7980" width="4800" height="3600">
    </BOUNDS>
    <BOUNDS type="Window" left="14565" top="1215" width="11970" height="8505">
    </BOUNDS>
@@ -694,8 +692,6 @@
    </NODE>
    <LINK srcnodeid="269" srcpinname="Y Output Value" dstnodeid="260" dstpinname="XYZ">
    </LINK>
-   <LINK srcnodeid="265" srcpinname="Layer" dstnodeid="13" dstpinname="Layer 1">
-   </LINK>
    <LINK srcnodeid="248" srcpinname="Mesh Layer" dstnodeid="13" dstpinname="Layer 2">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="270">
@@ -711,5 +707,123 @@
    </PIN>
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
+   </NODE>
+   <NODE systemname="HSV (Color Join Picker)" filename="%VVVV%\lib\nodes\modules\Color\HSV (Color Join Picker).v4p" nodename="HSV (Color Join Picker)" componentmode="Hidden" id="272">
+   <BOUNDS type="Node" left="5475" top="11160" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Color)" componentmode="InABox" id="273">
+   <BOUNDS type="Box" left="5475" top="11385" width="630" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5475" top="11385" width="0" height="0">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="272" srcpinname="Output" dstnodeid="273" dstpinname="Color Input">
+   </LINK>
+   <LINK srcnodeid="272" srcpinname="Output" dstnodeid="15" dstpinname="Background Color">
+   </LINK>
+   <NODE systemname="Preview (DX11.Texture)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Preview (DX11.Texture)" componentmode="Hidden" id="274">
+   <BOUNDS type="Node" left="6945" top="4260" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6945" top="4260" width="6000" height="4500">
+   </BOUNDS>
+   <BOUNDS type="Window" left="1335" top="2430" width="8715" height="8115">
+   </BOUNDS>
+   <PIN pinname="Texture In" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="71" srcpinname="RGB" dstnodeid="274" dstpinname="Texture In">
+   </LINK>
+   <LINK srcnodeid="265" srcpinname="Layer" dstnodeid="13" dstpinname="Layer 1">
+   </LINK>
+   <LINK srcnodeid="245" srcpinname="HelpLayer" dstnodeid="13" dstpinname="Layer 3">
+   </LINK>
+   <LINK srcnodeid="247" srcpinname="HelpLayer" dstnodeid="13" dstpinname="Layer 4">
+   </LINK>
+   <NODE systemname="Translate (Transform)" nodename="Translate (Transform)" componentmode="Hidden" id="288">
+   <BOUNDS type="Node" left="3600" top="7245" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform In" visible="1">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="Z" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="264" srcpinname="Output Node" dstnodeid="288" dstpinname="Transform In">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="289">
+   <BOUNDS type="Box" left="4245" top="6915" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4245" top="6915" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="2.45">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="289" srcpinname="Y Output Value" dstnodeid="288" dstpinname="Z">
+   </LINK>
+   <NODE systemname="AreaHandler" filename="AreaHandler.v4p" nodename="AreaHandler.v4p" componentmode="Hidden" id="294">
+   <BOUNDS type="Node" left="7001" top="9143" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3359" top="6243" width="7285" height="5800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="8970" top="4995" width="7800" height="7845">
+   </BOUNDS>
+   <PIN pinname="Layer 1" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Torso Quad" visible="1">
+   </PIN>
+   <PIN pinname="Legs Quad" visible="1">
+   </PIN>
+   <PIN pinname="Torso+Legs Helper Quads" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="92" srcpinname="Output" dstnodeid="294" dstpinname="Skeleton 2 Input">
+   </LINK>
+   <LINK srcnodeid="288" srcpinname="Transform Out" dstnodeid="294" dstpinname="Transform In">
+   </LINK>
+   <LINK srcnodeid="89" srcpinname="Output" dstnodeid="294" dstpinname="Skeleton Input">
+   </LINK>
+   <LINK srcnodeid="294" srcpinname="Torso+Legs Helper Quads" dstnodeid="13" dstpinname="Layer 5">
+   </LINK>
+   <NODE systemname="AreaHandler" filename="AreaHandler.v4p" nodename="AreaHandler.v4p" componentmode="Hidden" id="296">
+   <BOUNDS type="Node" left="8771" top="9113" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5129" top="6213" width="7285" height="5800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="8970" top="4995" width="7800" height="7845">
+   </BOUNDS>
+   <PIN pinname="Layer 1" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Torso Quad" visible="1">
+   </PIN>
+   <PIN pinname="Legs Quad" visible="1">
+   </PIN>
+   <PIN pinname="Torso+Legs Helper Quads" visible="1">
+   </PIN>
+   <PIN pinname="Skeleton Input" visible="1">
+   </PIN>
+   <PIN pinname="Transform In" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="92" srcpinname="Output" dstnodeid="296" dstpinname="Skeleton Input">
+   </LINK>
+   <LINK srcnodeid="296" srcpinname="Torso+Legs Helper Quads" dstnodeid="13" dstpinname="Layer 6">
+   </LINK>
+   <LINK srcnodeid="288" srcpinname="Transform Out" dstnodeid="296" dstpinname="Transform In">
+   </LINK>
+   <NODE systemname="AreaCheck" filename="AreaCheck.v4p" nodename="AreaCheck.v4p" componentmode="Hidden" id="297">
+   <BOUNDS type="Node" left="10035" top="9465" width="100" height="100">
+   </BOUNDS>
    </NODE>
    </PATCH>
