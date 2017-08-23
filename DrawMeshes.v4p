@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\_GIT\bodyswap\DrawMeshes.v4p" systemname="DrawMeshes" filename="D:\_GIT\bodyswap\DrawMeshes.v4p" scrollx="6000" scrolly="0">
+   <PATCH nodename="D:\GIT\BodySwapMer\DrawMeshes.v4p" systemname="DrawMeshes" filename="D:\_GIT\bodyswap\DrawMeshes.v4p" scrollx="0" scrolly="630">
    <NODE systemname="Rasterizer (DX11.RenderState)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Rasterizer (DX11.RenderState)" componentmode="Hidden" id="0" hiddenwhenlocked="1">
    <BOUNDS type="Node" left="5055" top="3840" width="100" height="100">
    </BOUNDS>
@@ -188,7 +188,7 @@
    </LINK>
    <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="3" dstpinname="Enabled">
    </LINK>
-   <BOUNDS type="Window" left="13140" top="690" width="20340" height="7995">
+   <BOUNDS type="Window" left="6450" top="6315" width="26820" height="9690">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -313,9 +313,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="24">
-   <BOUNDS type="Node" left="11235" top="975" width="100" height="100">
+   <BOUNDS type="Node" left="11760" top="780" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="11235" top="975" width="795" height="720">
+   <BOUNDS type="Box" left="11760" top="780" width="795" height="720">
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="3">
    </PIN>
@@ -330,8 +330,6 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="24" srcpinname="Y Output Value" dstnodeid="23" dstpinname="Input 2">
-   </LINK>
    <NODE systemname="IOBox (Node)" nodename="IOBox (Node)" componentmode="InABox" id="28">
    <BOUNDS type="Node" left="2745" top="1365" width="100" height="100">
    </BOUNDS>
@@ -434,8 +432,6 @@
    </LINK>
    <LINK srcnodeid="23" srcpinname="Output" dstnodeid="21" dstpinname="XYZ">
    </LINK>
-   <LINK srcnodeid="24" srcpinname="Y Output Value" dstnodeid="22" dstpinname="XYZ">
-   </LINK>
    <NODE systemname="Multiply (Transform)" nodename="Multiply (Transform)" componentmode="Hidden" id="37">
    <BOUNDS type="Node" left="10710" top="2835" width="100" height="100">
    </BOUNDS>
@@ -452,4 +448,10 @@
    </LINK>
    <LINK srcnodeid="37" srcpinname="Transform Out" dstnodeid="3" dstpinname="Transform In">
    </LINK>
+   <LINK srcnodeid="24" srcpinname="Y Output Value" dstnodeid="22" dstpinname="XYZ">
+   </LINK>
+   <LINK srcnodeid="24" srcpinname="Y Output Value" dstnodeid="23" dstpinname="Input 2">
+   </LINK>
+   <PACK Name="dx11" Version="1.0.2">
+   </PACK>
    </PATCH>
