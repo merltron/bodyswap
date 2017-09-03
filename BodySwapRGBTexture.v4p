@@ -1,9 +1,9 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\GIT\BodySwapMer\BodySwapRGBTexture.v4p" systemname="BodySwapRGBTexture" filename="D:\_GIT\bodyswap\BodySwapRGBTexture.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="D:\GIT\BodySwapMer\BodySwapRGBTexture.v4p" systemname="BodySwapRGBTexture" filename="D:\_GIT\bodyswap\BodySwapRGBTexture.v4p" scrollx="30" scrolly="0">
    <NODE nodename="IOBox (String)" componentmode="InABox" id="11" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="6480" top="3180" width="1365" height="270">
+   <BOUNDS type="Node" left="7545" top="4140" width="1365" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="6480" top="3180" width="1575" height="285">
+   <BOUNDS type="Box" left="7545" top="4140" width="1575" height="285">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|From 2 to 1|">
    </PIN>
@@ -14,12 +14,12 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <NODE id="12" componentmode="Hidden" systemname="BodySwap" filename="BodySwap.v4p" nodename="BodySwap.v4p">
-   <BOUNDS type="Window" left="11175" top="3540" width="16530" height="13035">
+   <NODE id="12" componentmode="InAWindow" systemname="BodySwap" filename="BodySwap.v4p" nodename="BodySwap.v4p">
+   <BOUNDS type="Window" left="975" top="810" width="16530" height="13035">
    </BOUNDS>
-   <BOUNDS type="Node" left="6374" top="2816" width="0" height="0">
+   <BOUNDS type="Node" left="7604" top="3776" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="2070" top="225" width="9585" height="5895">
+   <BOUNDS type="Box" left="3300" top="1185" width="9585" height="5895">
    </BOUNDS>
    <PIN pinname="From" visible="1">
    </PIN>
@@ -43,13 +43,17 @@
    </PIN>
    <PIN pinname="Player RGB Texture From" visible="1">
    </PIN>
+   <PIN pinname="SkeletonJoints From LIVE" visible="1">
+   </PIN>
+   <PIN pinname="Player RGB Texture From LIVE" visible="1" slicecount="1" values="||">
+   </PIN>
    </NODE>
-   <NODE id="13" componentmode="Hidden" systemname="BodySwap" filename="BodySwap.v4p" nodename="BodySwap.v4p">
+   <NODE id="13" componentmode="InAWindow" systemname="BodySwap" filename="BodySwap.v4p" nodename="BodySwap.v4p">
    <BOUNDS type="Window" left="6855" top="735" width="15840" height="13035">
    </BOUNDS>
-   <BOUNDS type="Node" left="4454" top="2876" width="0" height="0">
+   <BOUNDS type="Node" left="3899" top="3731" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="30" top="120" width="9585" height="5895">
+   <BOUNDS type="Box" left="0" top="975" width="9585" height="5895">
    </BOUNDS>
    <PIN pinname="From" visible="1">
    </PIN>
@@ -75,23 +79,9 @@
    </PIN>
    <PIN pinname="Player RGB Texture From" visible="1">
    </PIN>
-   </NODE>
-   <NODE id="14" systemname="PlayerRGB" filename="PlayerRGB.v4p" nodename="PlayerRGB.v4p" componentmode="Hidden">
-   <BOUNDS type="Node" left="810" top="1365" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="DepthRGB" visible="1" slicecount="1" values="||">
+   <PIN pinname="SkeletonJoints From LIVE" visible="1">
    </PIN>
-   <PIN pinname="Player" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="RGB" visible="1" slicecount="1" values="||">
-   </PIN>
-   <BOUNDS type="Window" left="5490" top="2055" width="7860" height="5160">
-   </BOUNDS>
-   <PIN pinname="RGB Texture" visible="1">
-   </PIN>
-   <PIN pinname="Kinect Runtime" visible="1">
-   </PIN>
-   <PIN pinname="Texture Out" visible="1">
+   <PIN pinname="Player RGB Texture From LIVE" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <NODE nodename="Group (DX11.Layer)" id="15" systemname="Group (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll">
@@ -144,37 +134,11 @@
    <PIN pinname="Output Node" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="18" srcpinname="Output Node" dstnodeid="14" dstpinname="RGB">
-   </LINK>
-   <NODE id="19" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
-   <PIN pinname="Descriptive Name" slicecount="1" values="Player">
-   </PIN>
-   <BOUNDS type="Box" left="4170" top="905" width="750" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="4170" top="905" width="750" height="240">
-   </BOUNDS>
-   <PIN pinname="Output Node" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="19" srcpinname="Output Node" dstnodeid="14" dstpinname="Player">
-   </LINK>
-   <NODE id="20" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
-   <PIN pinname="Descriptive Name" slicecount="1" values="DepthRGB">
-   </PIN>
-   <BOUNDS type="Box" left="5490" top="920" width="750" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="5490" top="920" width="750" height="240">
-   </BOUNDS>
-   <PIN pinname="Output Node" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="20" srcpinname="Output Node" dstnodeid="14" dstpinname="DepthRGB">
-   </LINK>
    <LINK srcnodeid="15" srcpinname="Layer Out" dstnodeid="17" dstpinname="Layer">
    </LINK>
    <LINK srcnodeid="17" srcpinname="Buffers" dstnodeid="16" dstpinname="Input Node">
    </LINK>
-   <BOUNDS type="Window" left="10965" top="2010" width="17835" height="9990">
+   <BOUNDS type="Window" left="1005" top="2100" width="23580" height="9990">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -235,9 +199,9 @@
    <PACK Name="dx11" Version="1.0.2">
    </PACK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="44">
-   <BOUNDS type="Node" left="6945" top="795" width="100" height="100">
+   <BOUNDS type="Node" left="7590" top="630" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="6945" top="795" width="795" height="480">
+   <BOUNDS type="Box" left="7590" top="630" width="795" height="480">
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="2">
    </PIN>
@@ -293,9 +257,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="46">
-   <BOUNDS type="Node" left="13785" top="840" width="100" height="100">
+   <BOUNDS type="Node" left="14205" top="705" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="13785" top="840" width="795" height="480">
+   <BOUNDS type="Box" left="14205" top="705" width="795" height="480">
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="2">
    </PIN>
@@ -320,24 +284,10 @@
    <PIN pinname="Output Node" visible="1">
    </PIN>
    </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="51">
-   <BOUNDS type="Node" left="495" top="1650" width="3405" height="480">
-   </BOUNDS>
-   <BOUNDS type="Box" left="495" top="1650" width="3030" height="915">
-   </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|This should be done BEFORE S+H the textures.&cr;&lf;This is masking the RGB Texture to display only the players|">
-   </PIN>
-   <PIN pinname="Output String" visible="0">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
-   </PIN>
-   </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="52">
-   <BOUNDS type="Node" left="4470" top="3225" width="990" height="270">
+   <BOUNDS type="Node" left="4140" top="4140" width="990" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="4470" top="3225" width="990" height="270">
+   <BOUNDS type="Box" left="4140" top="4140" width="990" height="270">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|From 1 to 2|">
    </PIN>
@@ -352,12 +302,78 @@
    </LINK>
    <LINK srcnodeid="12" srcpinname="Layer" dstnodeid="15" dstpinname="Layer 2">
    </LINK>
-   <LINK srcnodeid="47" srcpinname="Y Output Value" dstnodeid="13" dstpinname="SkeletonJoints From">
+   <LINK srcnodeid="47" srcpinname="Y Output Value" dstnodeid="13" dstpinname="SkeletonJoints From Stored">
    </LINK>
-   <LINK srcnodeid="46" srcpinname="Y Output Value" dstnodeid="12" dstpinname="SkeletonJoints From">
+   <LINK srcnodeid="46" srcpinname="Y Output Value" dstnodeid="12" dstpinname="SkeletonJoints From Stored">
    </LINK>
-   <LINK srcnodeid="18" srcpinname="Output Node" dstnodeid="13" dstpinname="Player RGB Texture From">
+   <LINK srcnodeid="18" srcpinname="Output Node" dstnodeid="13" dstpinname="Player RGB Texture From Stored">
    </LINK>
-   <LINK srcnodeid="48" srcpinname="Output Node" dstnodeid="12" dstpinname="Player RGB Texture From">
+   <LINK srcnodeid="48" srcpinname="Output Node" dstnodeid="12" dstpinname="Player RGB Texture From Stored">
+   </LINK>
+   <NODE systemname="IOBox (Node)" nodename="IOBox (Node)" componentmode="InABox" id="53">
+   <BOUNDS type="Node" left="4530" top="555" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4530" top="555" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|RGB Live|">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="45" srcpinname="Y Output Value" dstnodeid="12" dstpinname="SkeletonJoints From LIVE">
+   </LINK>
+   <LINK srcnodeid="53" srcpinname="Output Node" dstnodeid="12" dstpinname="Player RGB Texture From LIVE">
+   </LINK>
+   <LINK srcnodeid="44" srcpinname="Y Output Value" dstnodeid="13" dstpinname="SkeletonJoints From LIVE">
+   </LINK>
+   <LINK srcnodeid="53" srcpinname="Output Node" dstnodeid="13" dstpinname="Player RGB Texture From LIVE">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="54">
+   <BOUNDS type="Node" left="10155" top="7020" width="390" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="10155" top="7020" width="390" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="ren">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="Preview (DX11.Texture)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Preview (DX11.Texture)" componentmode="InAWindow" id="55" stayontop="0">
+   <BOUNDS type="Node" left="7785" top="8115" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7785" top="8115" width="6000" height="4500">
+   </BOUNDS>
+   <BOUNDS type="Window" left="15885" top="6255" width="11925" height="8760">
+   </BOUNDS>
+   <PIN pinname="Texture In" visible="1">
+   </PIN>
+   <PIN pinname="Show Alpha" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="17" srcpinname="Buffers" dstnodeid="55" dstpinname="Texture In">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="56">
+   <BOUNDS type="Box" left="8205" top="7230" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8205" top="7230" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="56" srcpinname="Y Output Value" dstnodeid="55" dstpinname="Show Alpha">
    </LINK>
    </PATCH>

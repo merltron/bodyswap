@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\GIT\BodySwapMer\StoreBestRGB.v4p" systemname="StoreBestRGB" filename="D:\GIT\BodySwapMer\StoreBestRGB.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="12240" top="3105" width="6690" height="6000">
+   <PATCH nodename="D:\GIT\BodySwapMer\StoreBestRGB.v4p" systemname="StoreBestRGB" filename="D:\GIT\BodySwapMer\StoreBestRGB.v4p" scrollx="165" scrolly="0">
+   <BOUNDS type="Window" left="14775" top="5115" width="9000" height="6930">
    </BOUNDS>
    <PACK Name="dx11" Version="1.0.2">
    </PACK>
@@ -35,9 +35,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="2">
-   <BOUNDS type="Node" left="3630" top="450" width="100" height="100">
+   <BOUNDS type="Node" left="3585" top="60" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="3630" top="450" width="480" height="480">
+   <BOUNDS type="Box" left="3585" top="60" width="480" height="480">
    </BOUNDS>
    <PIN pinname="Value Type" slicecount="1" values="Boolean">
    </PIN>
@@ -127,5 +127,7 @@
    <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Set">
    </LINK>
    <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="9" dstpinname="Set">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="10" dstpinname="Y Input Value">
    </LINK>
    </PATCH>
