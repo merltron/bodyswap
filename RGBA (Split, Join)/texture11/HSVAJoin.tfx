@@ -1,0 +1,41 @@
+//@author: antokhio
+//@help: template for pixel shaders
+//@tags: tfx, source, filter, mixer
+//@credits: vvvv group
+#include "ColorSpace.fxh"
+struct vs2ps { float4 pos: SV_POSITION; float2 uv: TEXCOORD0;};
+SamplerState s0: IMMUTABLE {AddressU=Wrap;AddressV=Wrap;};
+Texture2D tex0 : register(t0):PREVIOUS; 
+Texture2D tex1;
+Texture2D tex2;
+Texture2D tex3;
+
+float2 R:TARGETSIZE; 
+
+float4 PassThrough(vs2ps input): SV_Target
+{
+   	float h = tex0.Sample(s0, input.uv).r;
+	float s = tex1.Sample(s0, input.uv).r;
+	float v = tex2.Sample(s0, input.uv).r;
+	float a = tex3.Sample(s0, input.uv).r;
+	float3 rgb = HSVtoRGB(float3 (h,s,v));
+	return float4 (rgb,a);
+}
+
+technique10 R8G8B8A8_UNorm 
+{
+	pass P0 <string format = "R8G8B8A8_UNorm";>
+	{ SetPixelShader(CompileShader(ps_4_0, PassThrough())); }
+}
+
+technique10 R16G16B16A16_Float
+{
+	pass P0 <string format = "R16G16B16A16_Float";>
+	{ SetPixelShader(CompileShader(ps_4_0, PassThrough())); }
+} 
+
+technique10 R32G32B32A32_Float
+{
+	pass P0 <string format = "R32G32B32A32_Float";>
+	{ SetPixelShader(CompileShader(ps_4_0, PassThrough())); }
+} 

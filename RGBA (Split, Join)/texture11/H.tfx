@@ -1,0 +1,23 @@
+//@author: antokhio
+//@help: template for pixel shaders
+//@tags: tfx, source, filter, mixer
+//@credits: vvvv group
+
+struct vs2ps { float4 pos: SV_POSITION; float2 uv: TEXCOORD0;};
+SamplerState s0: IMMUTABLE {AddressU=Wrap;AddressV=Wrap;};
+Texture2D tex0 : register(t0):PREVIOUS; 
+#include "ColorSpace.fxh"
+float2 R:TARGETSIZE; 
+
+float4 PassThrough(vs2ps input): SV_Target
+{
+   	float4 col = tex0.Sample(s0, input.uv);
+	col.rgb = RGBtoHSV(col.rgb);
+	return col.rrra;
+}
+
+technique10 Template 
+{
+	pass P0 
+	{ SetPixelShader(CompileShader(ps_4_0, PassThrough())); }
+} 

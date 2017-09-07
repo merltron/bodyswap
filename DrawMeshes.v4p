@@ -28,70 +28,6 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <NODE id="2" componentmode="Hidden" nodename="Mesh (DX11.Pointcloud Kinect)" systemname="Mesh (DX11.Pointcloud Kinect)" filename="%VVVV%\packs\dx11-pointcloud\nodes\modules\Visualization\Mesh (DX11.Pointcloud Kinect).v4p">
-   <BOUNDS type="Node" left="6105" top="4245" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="6105" top="4245" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="maxDistance" visible="1">
-   </PIN>
-   <PIN pinname="Transform Filter" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Render State" visible="1">
-   </PIN>
-   <PIN pinname="RGB" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Depth" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="RGBDepth" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Depth FOVXY" visible="1" slicecount="2" values="0.196111111621269,0.166666670702398">
-   </PIN>
-   <PIN pinname="Mesh Layer" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Enabled" slicecount="1" visible="1" values="1">
-   </PIN>
-   <BOUNDS type="Window" left="11895" top="5415" width="14025" height="8160">
-   </BOUNDS>
-   <PIN pinname="Resolution" visible="1" slicecount="2" values="512,424">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Sk.1">
-   </PIN>
-   </NODE>
-   <NODE id="3" componentmode="Hidden" nodename="Mesh (DX11.Pointcloud Kinect)" systemname="Mesh (DX11.Pointcloud Kinect)" filename="%VVVV%\packs\dx11-pointcloud\nodes\modules\Visualization\Mesh (DX11.Pointcloud Kinect).v4p">
-   <BOUNDS type="Node" left="9885" top="4155" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="9885" top="4155" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="maxDistance" visible="1" slicecount="1" values="0.08">
-   </PIN>
-   <PIN pinname="Transform Filter" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Render State" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="RGB" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Depth" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="RGBDepth" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Depth FOVXY" visible="1" slicecount="2" values="0.196111111621269,0.166666670702398">
-   </PIN>
-   <PIN pinname="Mesh Layer" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Enabled" slicecount="1" visible="1" values="1">
-   </PIN>
-   <BOUNDS type="Window" left="11895" top="5415" width="14025" height="8160">
-   </BOUNDS>
-   <PIN pinname="Resolution" visible="1" slicecount="2" values="512,424">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Sk.2">
-   </PIN>
-   </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="4" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="11505" top="3930" width="480" height="480">
    </BOUNDS>
@@ -110,8 +46,6 @@
    <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="0" srcpinname="Render State" dstnodeid="2" dstpinname="Render State" linkstyle="PolyLine">
-   </LINK>
    <NODE id="5" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Resolution">
    </PIN>
@@ -120,8 +54,6 @@
    <BOUNDS type="Node" left="4185" top="1280" width="750" height="240">
    </BOUNDS>
    </NODE>
-   <LINK srcnodeid="5" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Resolution">
-   </LINK>
    <NODE id="6" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="RGB">
    </PIN>
@@ -130,8 +62,6 @@
    <BOUNDS type="Node" left="5175" top="1280" width="750" height="240">
    </BOUNDS>
    </NODE>
-   <LINK srcnodeid="6" srcpinname="Output Node" dstnodeid="2" dstpinname="RGB">
-   </LINK>
    <NODE id="7" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Depth">
    </PIN>
@@ -150,8 +80,6 @@
    <BOUNDS type="Node" left="8625" top="1235" width="750" height="240">
    </BOUNDS>
    </NODE>
-   <LINK srcnodeid="8" srcpinname="Output Node" dstnodeid="2" dstpinname="RGBDepth">
-   </LINK>
    <NODE id="9" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Depth FOVXY|">
    </PIN>
@@ -160,10 +88,6 @@
    <BOUNDS type="Node" left="9585" top="1205" width="750" height="240">
    </BOUNDS>
    </NODE>
-   <LINK srcnodeid="9" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Depth FOVXY">
-   </LINK>
-   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="2" dstpinname="maxDistance" linkstyle="PolyLine">
-   </LINK>
    <NODE id="10" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Mesh Layer|">
    </PIN>
@@ -174,20 +98,6 @@
    <PIN pinname="Input Node" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="0" srcpinname="Render State" dstnodeid="3" dstpinname="Render State" linkstyle="PolyLine">
-   </LINK>
-   <LINK srcnodeid="5" srcpinname="Y Output Value" dstnodeid="3" dstpinname="Resolution">
-   </LINK>
-   <LINK srcnodeid="6" srcpinname="Output Node" dstnodeid="3" dstpinname="RGB">
-   </LINK>
-   <LINK srcnodeid="8" srcpinname="Output Node" dstnodeid="3" dstpinname="RGBDepth">
-   </LINK>
-   <LINK srcnodeid="9" srcpinname="Y Output Value" dstnodeid="3" dstpinname="Depth FOVXY">
-   </LINK>
-   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="3" dstpinname="maxDistance" linkstyle="PolyLine">
-   </LINK>
-   <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="3" dstpinname="Enabled">
-   </LINK>
    <BOUNDS type="Window" left="6450" top="6315" width="26820" height="9690">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
@@ -222,8 +132,6 @@
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
    </NODE>
-   <LINK srcnodeid="13" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Enabled">
-   </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="16">
    <BOUNDS type="Box" left="12915" top="1035" width="795" height="240">
    </BOUNDS>
@@ -277,10 +185,6 @@
    <LINK srcnodeid="19" srcpinname="Output Node" dstnodeid="18" dstpinname="Texture In 2">
    </LINK>
    <LINK srcnodeid="7" srcpinname="Output Node" dstnodeid="18" dstpinname="Texture In">
-   </LINK>
-   <LINK srcnodeid="18" srcpinname="Texture Out" dstnodeid="3" dstpinname="Depth">
-   </LINK>
-   <LINK srcnodeid="18" srcpinname="Texture Out" dstnodeid="2" dstpinname="Depth">
    </LINK>
    <NODE systemname="Subtract (Value)" nodename="Subtract (Value)" componentmode="Hidden" id="23">
    <BOUNDS type="Node" left="10575" top="1800" width="100" height="100">
@@ -345,17 +249,13 @@
    </BOUNDS>
    <BOUNDS type="Box" left="5910" top="4815" width="3000" height="3000">
    </BOUNDS>
-   <PIN pinname="Layer 1" visible="1">
+   <PIN pinname="Layer 1" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Layer 2" visible="1">
+   <PIN pinname="Layer 2" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Layer Out" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="2" srcpinname="Mesh Layer" dstnodeid="29" dstpinname="Layer 1">
-   </LINK>
-   <LINK srcnodeid="3" srcpinname="Mesh Layer" dstnodeid="29" dstpinname="Layer 2">
-   </LINK>
    <LINK srcnodeid="29" srcpinname="Layer Out" dstnodeid="10" dstpinname="Input Node">
    </LINK>
    <NODE systemname="Inverse (Transform)" nodename="Inverse (Transform)" componentmode="Hidden" id="30">
@@ -406,10 +306,6 @@
    </LINK>
    <LINK srcnodeid="17" srcpinname="Output Node" dstnodeid="32" dstpinname="Transform In 1">
    </LINK>
-   <LINK srcnodeid="32" srcpinname="Transform Out" dstnodeid="3" dstpinname="Transform Filter">
-   </LINK>
-   <LINK srcnodeid="31" srcpinname="Transform Out" dstnodeid="2" dstpinname="Transform Filter">
-   </LINK>
    <LINK srcnodeid="16" srcpinname="Output Node" dstnodeid="31" dstpinname="Transform In 1">
    </LINK>
    <LINK srcnodeid="30" srcpinname="Transform Out" dstnodeid="31" dstpinname="Transform In 2">
@@ -428,8 +324,6 @@
    </LINK>
    <LINK srcnodeid="28" srcpinname="Output Node" dstnodeid="35" dstpinname="Transform In 1">
    </LINK>
-   <LINK srcnodeid="35" srcpinname="Transform Out" dstnodeid="2" dstpinname="Transform In">
-   </LINK>
    <LINK srcnodeid="23" srcpinname="Output" dstnodeid="21" dstpinname="XYZ">
    </LINK>
    <NODE systemname="Multiply (Transform)" nodename="Multiply (Transform)" componentmode="Hidden" id="37">
@@ -446,12 +340,118 @@
    </LINK>
    <LINK srcnodeid="22" srcpinname="Transform Out" dstnodeid="37" dstpinname="Transform In 2">
    </LINK>
-   <LINK srcnodeid="37" srcpinname="Transform Out" dstnodeid="3" dstpinname="Transform In">
-   </LINK>
    <LINK srcnodeid="24" srcpinname="Y Output Value" dstnodeid="22" dstpinname="XYZ">
    </LINK>
    <LINK srcnodeid="24" srcpinname="Y Output Value" dstnodeid="23" dstpinname="Input 2">
    </LINK>
    <PACK Name="dx11" Version="1.0.2">
    </PACK>
+   <NODE id="2" componentmode="Hidden" nodename="Mesh (DX11.Pointcloud Kinect Linear Sampler)" systemname="Mesh (DX11.Pointcloud Kinect Linear Sampler)" filename="mesh\Mesh (DX11.Pointcloud Kinect Linear Sampler).v4p">
+   <BOUNDS type="Node" left="6105" top="4245" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6105" top="4245" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="maxDistance" visible="1">
+   </PIN>
+   <PIN pinname="Transform Filter" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Render State" visible="1">
+   </PIN>
+   <PIN pinname="RGB" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Depth" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="RGBDepth" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Depth FOVXY" visible="1" slicecount="2" values="0.196111111621269,0.166666670702398">
+   </PIN>
+   <PIN pinname="Mesh Layer" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Enabled" slicecount="1" visible="1" values="1">
+   </PIN>
+   <BOUNDS type="Window" left="11895" top="5415" width="14025" height="8160">
+   </BOUNDS>
+   <PIN pinname="Resolution" visible="1" slicecount="2" values="512,424">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Sk.1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Render State" dstnodeid="2" dstpinname="Render State" linkstyle="PolyLine">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Resolution">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Output Node" dstnodeid="2" dstpinname="RGB">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Output Node" dstnodeid="2" dstpinname="RGBDepth">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Depth FOVXY">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="2" dstpinname="maxDistance" linkstyle="PolyLine">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Enabled">
+   </LINK>
+   <LINK srcnodeid="18" srcpinname="Texture Out" dstnodeid="2" dstpinname="Depth">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Mesh Layer" dstnodeid="29" dstpinname="Layer 1">
+   </LINK>
+   <LINK srcnodeid="31" srcpinname="Transform Out" dstnodeid="2" dstpinname="Transform Filter">
+   </LINK>
+   <LINK srcnodeid="35" srcpinname="Transform Out" dstnodeid="2" dstpinname="Transform In">
+   </LINK>
+   <NODE id="3" componentmode="Hidden" nodename="Mesh (DX11.Pointcloud Kinect Linear Sampler)" systemname="Mesh (DX11.Pointcloud Kinect Linear Sampler)" filename="mesh\Mesh (DX11.Pointcloud Kinect Linear Sampler).v4p">
+   <BOUNDS type="Node" left="9885" top="4155" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="9885" top="4155" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="maxDistance" visible="1" slicecount="1" values="0.08">
+   </PIN>
+   <PIN pinname="Transform Filter" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Render State" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="RGB" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Depth" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="RGBDepth" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Depth FOVXY" visible="1" slicecount="2" values="0.196111111621269,0.166666670702398">
+   </PIN>
+   <PIN pinname="Mesh Layer" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Enabled" slicecount="1" visible="1" values="1">
+   </PIN>
+   <BOUNDS type="Window" left="11895" top="5415" width="14025" height="8160">
+   </BOUNDS>
+   <PIN pinname="Resolution" visible="1" slicecount="2" values="512,424">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Sk.2">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Render State" dstnodeid="3" dstpinname="Render State" linkstyle="PolyLine">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Y Output Value" dstnodeid="3" dstpinname="Resolution">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Output Node" dstnodeid="3" dstpinname="RGB">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Output Node" dstnodeid="3" dstpinname="RGBDepth">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Y Output Value" dstnodeid="3" dstpinname="Depth FOVXY">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="3" dstpinname="maxDistance" linkstyle="PolyLine">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="3" dstpinname="Enabled">
+   </LINK>
+   <LINK srcnodeid="18" srcpinname="Texture Out" dstnodeid="3" dstpinname="Depth">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Mesh Layer" dstnodeid="29" dstpinname="Layer 2">
+   </LINK>
+   <LINK srcnodeid="32" srcpinname="Transform Out" dstnodeid="3" dstpinname="Transform Filter">
+   </LINK>
+   <LINK srcnodeid="37" srcpinname="Transform Out" dstnodeid="3" dstpinname="Transform In">
+   </LINK>
    </PATCH>

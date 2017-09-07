@@ -1,0 +1,179 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\Users\antok\Dropbox\_dx11\RGB (Split)\modules\HSVA (DX11.TextureFX Join).v4p" systemname="HSVA (DX11.TextureFX Join)" filename="C:\Users\antok\Dropbox\_dx11\RGB (Split)\modules\HSVA (DX11.TextureFX Join).v4p">
+   <BOUNDS type="Window" left="13185" top="6555" width="5640" height="6000">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="3">
+   <BOUNDS type="Box" left="480" top="420" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="480" top="420" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Hue Texture In|">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="2">
+   <BOUNDS type="Box" left="1005" top="930" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1005" top="930" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Saturation Texture In|">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="1">
+   <BOUNDS type="Box" left="1155" top="1455" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1155" top="1455" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Value Texture In|">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="0">
+   <BOUNDS type="Box" left="1305" top="1980" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1305" top="1980" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Alpha Texture In|">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="HSVAJoin (DX11.TextureFX)" filename="texture11\HSVAJoin.tfx" nodename="HSVAJoin (DX11.TextureFX)" componentmode="Hidden" id="4">
+   <BOUNDS type="Node" left="495" top="2850" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture In" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Technique" visible="1">
+   </PIN>
+   <PIN pinname="Enabled" visible="1">
+   </PIN>
+   <PIN pinname="Use Default Size" visible="1">
+   </PIN>
+   <PIN pinname="Default SizeXY" visible="1">
+   </PIN>
+   <PIN pinname="tex1" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="tex2" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="tex3" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Output Node" dstnodeid="4" dstpinname="Texture In">
+   </LINK>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="8">
+   <BOUNDS type="Box" left="3150" top="420" width="1590" height="270">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3150" top="420" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="R8G8B8A8_UNorm">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="Template">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Format">
+   </PIN>
+   <PIN pinname="Output Enum" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="7">
+   <BOUNDS type="Box" left="4470" top="1950" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4470" top="1950" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Enabled">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="6">
+   <BOUNDS type="Box" left="3375" top="1050" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3375" top="1050" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Use Default Size|">
+   </PIN>
+   <PIN pinname="Pin Visibility" slicecount="1" values="OnlyInspector">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="5">
+   <BOUNDS type="Box" left="3525" top="1755" width="795" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3525" top="1755" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="256,256">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Default SizeXY|">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Pin Visibility" slicecount="1" values="OnlyInspector">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="8" srcpinname="Output Enum" dstnodeid="4" dstpinname="Technique">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="4" dstpinname="Enabled">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="4" dstpinname="Use Default Size">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Y Output Value" dstnodeid="4" dstpinname="Default SizeXY">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Output Node" dstnodeid="4" dstpinname="tex1">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Output Node" dstnodeid="4" dstpinname="tex2">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Output Node" dstnodeid="4" dstpinname="tex3">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="9">
+   <BOUNDS type="Box" left="510" top="4275" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="510" top="4275" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Texture Out|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Texture Out" dstnodeid="9" dstpinname="Input Node">
+   </LINK>
+   </PATCH>
