@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\GIT\BodySwapMer\BodySwap.v4p" scrollx="1275" scrolly="0" systemname="BodySwap" filename="C:\Users\dom\Desktop\MerlinKinect\BodySwap.v4p">
+   <PATCH nodename="D:\GIT\BodySwapMer\BodySwap.v4p" scrollx="1275" scrolly="270" systemname="BodySwap" filename="C:\Users\dom\Desktop\MerlinKinect\BodySwap.v4p">
    <NODE id="0" systemname="Quad (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Quad (DX11.Layer)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
    <BOUNDS type="Node" left="4725" top="7115" width="100" height="100">
    </BOUNDS>
@@ -193,9 +193,9 @@
    <NODE id="10" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Layer">
    </PIN>
-   <BOUNDS type="Box" left="3105" top="8090" width="2370" height="285">
+   <BOUNDS type="Box" left="2190" top="9710" width="2370" height="285">
    </BOUNDS>
-   <BOUNDS type="Node" left="3105" top="8090" width="750" height="240">
+   <BOUNDS type="Node" left="2190" top="9710" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="0" srcpinname="Layer" dstnodeid="10" dstpinname="Input Node">
@@ -224,7 +224,7 @@
    </NODE>
    <LINK srcnodeid="12" srcpinname="Y Output Value" dstnodeid="4" dstpinname="Input">
    </LINK>
-   <BOUNDS type="Window" left="975" top="810" width="16530" height="13035">
+   <BOUNDS type="Window" left="6855" top="735" width="15840" height="13035">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -565,5 +565,17 @@
    <LINK srcnodeid="54" srcpinname="Y Output Value" dstnodeid="52" dstpinname="Switch">
    </LINK>
    <LINK srcnodeid="52" srcpinname="Output" dstnodeid="58" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" id="60">
+   <BOUNDS type="Node" left="5745" top="8640" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5745" top="8640" width="6000" height="4500">
+   </BOUNDS>
+   <BOUNDS type="Window" left="-11775" top="6870" width="6240" height="5085">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="37" srcpinname="Layer Out" dstnodeid="60" dstpinname="Layers">
    </LINK>
    </PATCH>
