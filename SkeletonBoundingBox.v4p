@@ -17,6 +17,8 @@
    </PIN>
    <PIN pinname="Maximum" visible="1">
    </PIN>
+   <PIN pinname="Bin Size" visible="1">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="5280" top="2265" width="300" height="240">
@@ -200,7 +202,7 @@
    </LINK>
    <LINK srcnodeid="13" srcpinname="Y Output Value" dstnodeid="12" dstpinname="Input 2">
    </LINK>
-   <BOUNDS type="Window" left="12615" top="1395" width="9180" height="8280">
+   <BOUNDS type="Window" left="19050" top="735" width="9180" height="8280">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -295,7 +297,7 @@
    </PIN>
    <PIN pinname="Rows" slicecount="1" values="3">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="3" values="0,," visible="1">
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0,,">
    </PIN>
    <PIN pinname="Vector Size" slicecount="1" values="3">
    </PIN>
@@ -352,4 +354,20 @@
    </LINK>
    <PACK Name="dx11" Version="1.0.2">
    </PACK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="30">
+   <BOUNDS type="Box" left="6180" top="2490" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6180" top="2490" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="25">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="30" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Bin Size">
+   </LINK>
    </PATCH>
