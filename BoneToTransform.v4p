@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\GIT\BodySwapMer\BoneToTransform.v4p" systemname="BoneToTransform" filename="C:\Users\dom\Desktop\MerlinKinect\BoneToTransform.v4p" scrollx="0" scrolly="-360">
+   <PATCH nodename="D:\_GIT\bodyswap\BoneToTransform.v4p" systemname="BoneToTransform" filename="C:\Users\dom\Desktop\MerlinKinect\BoneToTransform.v4p" scrollx="0" scrolly="-360">
    <NODE systemname="Transform (Transform 2d Vector)" nodename="Transform (Transform 2d Vector)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="1500" top="4170" width="100" height="100">
    </BOUNDS>
@@ -178,7 +178,7 @@
    </LINK>
    <LINK srcnodeid="7" srcpinname="Output" dstnodeid="1" dstpinname="Y Input Value">
    </LINK>
-   <BOUNDS type="Window" left="11670" top="9135" width="9735" height="6630">
+   <BOUNDS type="Window" left="2625" top="4440" width="13155" height="12270">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -203,7 +203,7 @@
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="26">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="52" visible="1" values="1.5,0.5,1.5,0.5,1.5,0.5,1.5,0.5,1.5,0.5,1.5,0.5,1.5,0.5,1.5,0.5,1.5,0.5,1.47,0.25,1.5,0.5,1.5,0.5,1.5,0.5,1.5,0.5,1.5,0.5,1.5,0.27,1.5,0.5,1.5,0.5,1.5,0.5,1.5,0.5,1.5,0.5,1.5,0.5,1.5,0.5,2.17,0.73,1.5,0.5,1.5,0.5">
+   <PIN pinname="Y Input Value" slicecount="52" visible="1" values="1.5,0.82,1.5,0.5,1.5,0.5,1.5,0.5,1.5,0.51,1.5,0.5,1.5,1.83,1.5,0.52,1.5,0.5,1.47,0.37,1.5,0.83,1.5,0.56,1.5,0.57,1.5,0.51,1.5,0.63,1.5,0.38,1.5,0.53,1.5,0.57,1.5,0.5,1.5,0.51,1.5,0.51,1.5,0.5,1.5,0.5,2.46,1.12,1.5,0.5,1.5,0.5">
    </PIN>
    <PIN pinname="Vector Size" slicecount="1" values="2">
    </PIN>

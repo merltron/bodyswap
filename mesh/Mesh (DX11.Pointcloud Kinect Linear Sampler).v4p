@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\GIT\BodySwapMer\mesh\Mesh (DX11.Pointcloud Kinect Linear Sampler).v4p" systemname="Mesh (DX11.Pointcloud Kinect Linear Sampler)" filename="D:\GIT\BodySwapMer\mesh\Mesh (DX11.Pointcloud Kinect Linear Sampler).v4p" scrollx="0" scrolly="90">
-   <BOUNDS type="Window" left="11370" top="5265" width="14025" height="8160">
+   <PATCH nodename="D:\_GIT\bodyswap\mesh\Mesh (DX11.Pointcloud Kinect Linear Sampler).v4p" systemname="Mesh (DX11.Pointcloud Kinect Linear Sampler)" filename="D:\GIT\BodySwapMer\mesh\Mesh (DX11.Pointcloud Kinect Linear Sampler).v4p" scrollx="0" scrolly="90">
+   <BOUNDS type="Window" left="8820" top="5055" width="14025" height="8160">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -263,9 +263,9 @@
    <LINK srcnodeid="4" srcpinname="Output" dstnodeid="36" dstpinname="Input 1">
    </LINK>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="40" systemname="IOBox (Enumerations)">
-   <BOUNDS type="Box" left="5250" top="5715" width="1590" height="270">
+   <BOUNDS type="Box" left="5670" top="4785" width="1590" height="270">
    </BOUNDS>
-   <BOUNDS type="Node" left="5250" top="5715" width="0" height="0">
+   <BOUNDS type="Node" left="5670" top="4785" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Enum" slicecount="1" visible="1" values="RGB">
    </PIN>
@@ -334,14 +334,6 @@
    </NODE>
    <PACK Name="dx11" Version="1.0.2">
    </PACK>
-   <NODE systemname="Visualization_ConstantMesh_Linear.fx (Editor)" filename="dx11\Visualization_ConstantMesh_Linear.fx" nodename="Visualization_ConstantMesh_Linear.fx (Editor)" componentmode="Hidden" id="53">
-   <BOUNDS type="Node" left="4515" top="6315" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="4515" top="6315" width="6000" height="4500">
-   </BOUNDS>
-   <BOUNDS type="Window" left="16935" top="11895" width="12240" height="14835">
-   </BOUNDS>
-   </NODE>
    <NODE systemname="Visualization_ConstantMesh_Linear (DX11.Effect)" filename="dx11\Visualization_ConstantMesh_Linear.fx" nodename="Visualization_ConstantMesh_Linear (DX11.Effect)" componentmode="Hidden" id="37">
    <BOUNDS type="Node" left="3450" top="6225" width="100" height="100">
    </BOUNDS>

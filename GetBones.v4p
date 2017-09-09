@@ -1,4 +1,4 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
    <PATCH nodename="D:\_GIT\bodyswap\GetBones.v4p" systemname="GetBones" filename="C:\Users\dom\Desktop\MerlinKinect\GetBones.v4p" scrollx="0" scrolly="-360">
    <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="405" top="6525" width="100" height="100">
@@ -106,7 +106,7 @@
    </NODE>
    <LINK srcnodeid="3" srcpinname="Output" dstnodeid="8" dstpinname="Y Input Value">
    </LINK>
-   <BOUNDS type="Window" left="7425" top="8445" width="7620" height="9255">
+   <BOUNDS type="Window" left="-120" top="-120" width="28980" height="16380">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -148,6 +148,8 @@
    <PIN pinname="Y Input Value" slicecount="26" values="1,12,16,13,14,15,20,4,5,6,7,21,22,8,9,10,11,23,24,17,18,19,2,3,0,0">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Index">
    </PIN>
    </NODE>
    <LINK srcnodeid="12" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Index">
@@ -376,6 +378,8 @@
    <PIN pinname="Show Grid" slicecount="1" values="0">
    </PIN>
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="||">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="31">
