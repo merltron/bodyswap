@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\_GIT\bodyswap\BoneToTransform.v4p" systemname="BoneToTransform" filename="C:\Users\dom\Desktop\MerlinKinect\BoneToTransform.v4p" scrollx="0" scrolly="-360">
+   <PATCH nodename="D:\GIT\BodySwapMer\BoneToTransform.v4p" systemname="BoneToTransform" filename="C:\Users\dom\Desktop\MerlinKinect\BoneToTransform.v4p" scrollx="375" scrolly="0">
    <NODE systemname="Transform (Transform 2d Vector)" nodename="Transform (Transform 2d Vector)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="1500" top="4170" width="100" height="100">
    </BOUNDS>
@@ -113,7 +113,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Vector (2d Join)" nodename="Vector (2d Join)" componentmode="Hidden" id="11">
-   <BOUNDS type="Node" left="3090" top="2730" width="100" height="100">
+   <BOUNDS type="Node" left="3120" top="2805" width="100" height="100">
    </BOUNDS>
    <PIN pinname="X" visible="1">
    </PIN>
@@ -149,9 +149,9 @@
    <NODE id="15" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="1" values="ToXY">
    </PIN>
-   <BOUNDS type="Box" left="3645" top="545" width="750" height="240">
+   <BOUNDS type="Box" left="3300" top="620" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3645" top="545" width="750" height="240">
+   <BOUNDS type="Node" left="3300" top="620" width="750" height="240">
    </BOUNDS>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -178,22 +178,10 @@
    </LINK>
    <LINK srcnodeid="7" srcpinname="Output" dstnodeid="1" dstpinname="Y Input Value">
    </LINK>
-   <BOUNDS type="Window" left="2625" top="4440" width="13155" height="12270">
+   <BOUNDS type="Window" left="4605" top="3870" width="9735" height="6630">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
-   <NODE nodename="IOBox (Node)" componentmode="InABox" id="18">
-   <BOUNDS type="Box" left="270" top="585" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="270" top="585" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Transform In|">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="18" srcpinname="Output Node" dstnodeid="0" dstpinname="Transform In">
-   </LINK>
    <LINK srcnodeid="7" srcpinname="Output" dstnodeid="0" dstpinname="Rotate">
    </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="19">
@@ -230,14 +218,54 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="22">
-   <BOUNDS type="Node" left="10500" top="765" width="100" height="100">
+   <LINK srcnodeid="11" srcpinname="XY" dstnodeid="21" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="21" srcpinname="Output" dstnodeid="0" dstpinname="ScaleXY">
+   </LINK>
+   <PACK Name="dx11" Version="1.0.2">
+   </PACK>
+   <NODE id="24" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="FromXYZ">
+   </PIN>
+   <BOUNDS type="Box" left="4545" top="470" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Box" left="10500" top="765" width="2025" height="7725">
+   <BOUNDS type="Node" left="4545" top="470" width="750" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="23" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="ToXYZ">
+   </PIN>
+   <BOUNDS type="Box" left="6015" top="650" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6015" top="650" width="750" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Distance (3d)" filename="%VVVV%\lib\nodes\modules\3D\Distance (3d).v4p" nodename="Distance (3d)" componentmode="Hidden" id="25">
+   <BOUNDS type="Node" left="4260" top="2415" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XYZ1" visible="1">
+   </PIN>
+   <PIN pinname="XYZ2" visible="1">
+   </PIN>
+   <PIN pinname="Distance" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="24" srcpinname="Y Output Value" dstnodeid="25" dstpinname="XYZ1">
+   </LINK>
+   <LINK srcnodeid="23" srcpinname="Y Output Value" dstnodeid="25" dstpinname="XYZ2">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="26">
+   <BOUNDS type="Node" left="10245" top="765" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="10245" top="765" width="2025" height="7725">
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="26">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="52" visible="1" values="0.133506045703204,0.07,0.0664311487181972,0.04,0.04667493996081,0.04,0.141357628349843,0.06,0.102123083884488,0.05,0.0881754193839439,0.06,0.0887423982979948,0.07,0.0403936886097067,0.07,0.12377911479446,0.04,0.104166439474745,0.03,0.0512962360938724,0.03,0.0417318092661495,0.05,0.0211428235920612,0.07,0.0482417952846366,0.07,0.0857157244842395,0.07,0.112894511877023,0.07,0.027457569260466,0.07,0.0295072613394086,0.07,0.0289703352811074,0.07,0.128759948654,0.07,0.116074459762834,0.07,0.0366254589158118,0.07,0.0764976488507682,0.05,0.158063943749036,0.07,0.04,0.07,0.05,0.07">
+   <PIN pinname="Y Input Value" slicecount="52" visible="1" values="1.5,0.82,1.5,0.5,1.5,0.5,1.5,0.5,1.5,0.51,1.5,0.5,1.5,1.83,1.5,0.52,1.5,0.5,1.47,0.37,1.5,0.83,1.5,0.56,1.5,0.57,1.5,0.51,1.5,0.63,1.5,0.38,1.5,0.53,1.5,0.57,1.5,0.5,1.5,0.51,1.5,0.51,1.5,0.5,1.5,0.5,2.46,1.12,1.5,0.5,1.5,0.5">
    </PIN>
    <PIN pinname="Vector Size" slicecount="1" values="2">
    </PIN>
@@ -254,14 +282,46 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="19" srcpinname="Y Output Value" dstnodeid="21" dstpinname="Input 2">
+   <NODE systemname="Vector (2d Split)" nodename="Vector (2d Split)" componentmode="Hidden" id="27">
+   <BOUNDS type="Node" left="10095" top="8895" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XY" visible="1">
+   </PIN>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="26" srcpinname="Y Output Value" dstnodeid="27" dstpinname="XY">
    </LINK>
-   <LINK srcnodeid="11" srcpinname="XY" dstnodeid="21" dstpinname="Input 1">
+   <NODE systemname="Vector (2d Join)" nodename="Vector (2d Join)" componentmode="Hidden" id="28">
+   <BOUNDS type="Node" left="10080" top="9495" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   <PIN pinname="XY" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="27" srcpinname="X" dstnodeid="28" dstpinname="X">
    </LINK>
-   <LINK srcnodeid="10" srcpinname="Length" dstnodeid="11" dstpinname="Y">
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="29">
+   <BOUNDS type="Box" left="10830" top="9090" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="10830" top="9090" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.17">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="29" srcpinname="Y Output Value" dstnodeid="28" dstpinname="Y">
    </LINK>
-   <LINK srcnodeid="21" srcpinname="Output" dstnodeid="0" dstpinname="ScaleXY">
+   <LINK srcnodeid="28" srcpinname="XY" dstnodeid="19" dstpinname="Y Input Value">
    </LINK>
-   <PACK Name="dx11" Version="1.0.2">
-   </PACK>
+   <LINK srcnodeid="28" srcpinname="XY" dstnodeid="21" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="25" srcpinname="Distance" dstnodeid="11" dstpinname="Y">
+   </LINK>
    </PATCH>

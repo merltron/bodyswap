@@ -47,9 +47,15 @@
    </PIN>
    <PIN pinname="Player RGB Texture From LIVE" visible="1" slicecount="1" values="||">
    </PIN>
+   <PIN pinname="SkeletonJoints ToXYZ" visible="1">
+   </PIN>
+   <PIN pinname="SkeletonJoints From LIVE XYZ" visible="1">
+   </PIN>
+   <PIN pinname="SkeletonJoints From StoredXYZ" visible="1">
+   </PIN>
    </NODE>
    <NODE id="13" componentmode="Hidden" systemname="BodySwap" filename="BodySwap.v4p" nodename="BodySwap.v4p">
-   <BOUNDS type="Window" left="6855" top="735" width="15840" height="13035">
+   <BOUNDS type="Window" left="4440" top="4920" width="19395" height="13035">
    </BOUNDS>
    <BOUNDS type="Node" left="4334" top="4331" width="0" height="0">
    </BOUNDS>
@@ -82,6 +88,12 @@
    <PIN pinname="SkeletonJoints From LIVE" visible="1">
    </PIN>
    <PIN pinname="Player RGB Texture From LIVE" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="SkeletonJoints From LIVE XYZ" visible="1">
+   </PIN>
+   <PIN pinname="SkeletonJoints ToXYZ" visible="1">
+   </PIN>
+   <PIN pinname="SkeletonJoints From StoredXYZ" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="Group (DX11.Layer)" id="15" systemname="Group (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll">
@@ -138,7 +150,7 @@
    </LINK>
    <LINK srcnodeid="17" srcpinname="Buffers" dstnodeid="16" dstpinname="Input Node">
    </LINK>
-   <BOUNDS type="Window" left="1005" top="2100" width="17040" height="9990">
+   <BOUNDS type="Window" left="1485" top="5160" width="24240" height="9990">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -183,9 +195,9 @@
    <LINK srcnodeid="36" srcpinname="Transform Out" dstnodeid="17" dstpinname="View">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="37">
-   <BOUNDS type="Box" left="10665" top="3960" width="795" height="240">
+   <BOUNDS type="Box" left="10290" top="3660" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="10665" top="3960" width="0" height="0">
+   <BOUNDS type="Node" left="10290" top="3660" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="2">
    </PIN>
@@ -199,9 +211,9 @@
    <PACK Name="dx11" Version="1.0.2">
    </PACK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="44">
-   <BOUNDS type="Node" left="7590" top="630" width="100" height="100">
+   <BOUNDS type="Node" left="6210" top="270" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="7590" top="630" width="795" height="480">
+   <BOUNDS type="Box" left="6210" top="270" width="795" height="480">
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="2">
    </PIN>
@@ -219,9 +231,9 @@
    <LINK srcnodeid="44" srcpinname="Y Output Value" dstnodeid="12" dstpinname="SkeletonJoints To">
    </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="45">
-   <BOUNDS type="Node" left="8625" top="1020" width="100" height="100">
+   <BOUNDS type="Node" left="9150" top="570" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="8625" top="1020" width="795" height="480">
+   <BOUNDS type="Box" left="9150" top="570" width="795" height="480">
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="2">
    </PIN>
@@ -257,9 +269,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="46">
-   <BOUNDS type="Node" left="14205" top="705" width="100" height="100">
+   <BOUNDS type="Node" left="15420" top="705" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="14205" top="705" width="795" height="480">
+   <BOUNDS type="Box" left="15420" top="705" width="795" height="480">
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="2">
    </PIN>
@@ -333,7 +345,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="7785" top="8115" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="5025" top="8355" width="11925" height="8760">
+   <BOUNDS type="Window" left="-120" top="-120" width="28980" height="16380">
    </BOUNDS>
    <PIN pinname="Texture In" visible="1">
    </PIN>
@@ -361,5 +373,89 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="56" srcpinname="Y Output Value" dstnodeid="55" dstpinname="Show Alpha">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="60">
+   <BOUNDS type="Node" left="7095" top="570" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7095" top="570" width="795" height="480">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="50" values="-0.0186491012573242,-0.420480120623553,-0.0265447934468587,-0.238402868200231,-0.0377133687337239,-0.0254397356951678,-0.0383210182189941,0.115011596679688,-0.130912590026855,-0.113507362648293,-0.0851764043172201,-0.13514737729673,0.047529665629069,-0.263754102918837,0.0525206247965495,-0.27280115198206,0.0319176355997721,-0.142425424081308,-0.04441130956014,-0.369272133156105,-INF,INF,-INF,INF,-0.0524596532185873,-0.402708039460359,-0.216943073272705,-0.304349206995081,-0.398308189709981,-0.197692758065683,-0.473758586247762,-0.314904898184317,0.017681090037028,-0.435994353117766,0.11214230855306,-0.263294643825955,-0.0686393737792969,-0.304643701623987,-0.0273847579956055,-0.270650227864583,-0.0341657956441244,-0.0852054737232349,0.0653556823730469,-0.293443015769676,0.0680222829182943,-0.253322629575376,-INF,INF,-INF,INF">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Skeleton1 JointsXYZ Live|">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="59">
+   <BOUNDS type="Node" left="10125" top="960" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="10125" top="960" width="795" height="480">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="50" values="-0.0186491012573242,-0.420480120623553,-0.0265447934468587,-0.238402868200231,-0.0377133687337239,-0.0254397356951678,-0.0383210182189941,0.115011596679688,-0.130912590026855,-0.113507362648293,-0.0851764043172201,-0.13514737729673,0.047529665629069,-0.263754102918837,0.0525206247965495,-0.27280115198206,0.0319176355997721,-0.142425424081308,-0.04441130956014,-0.369272133156105,-INF,INF,-INF,INF,-0.0524596532185873,-0.402708039460359,-0.216943073272705,-0.304349206995081,-0.398308189709981,-0.197692758065683,-0.473758586247762,-0.314904898184317,0.017681090037028,-0.435994353117766,0.11214230855306,-0.263294643825955,-0.0686393737792969,-0.304643701623987,-0.0273847579956055,-0.270650227864583,-0.0341657956441244,-0.0852054737232349,0.0653556823730469,-0.293443015769676,0.0680222829182943,-0.253322629575376,-INF,INF,-INF,INF">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Skeleton2 JointsXYZ Live|">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="58">
+   <BOUNDS type="Node" left="13080" top="915" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="13080" top="915" width="795" height="480">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="2" values="0,0">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Skeleton1 JointsXYZ Stored|">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="57">
+   <BOUNDS type="Node" left="16815" top="990" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="16815" top="990" width="795" height="480">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="2" values="0,0">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Skeleton2 JointsXYZ Stored|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="60" srcpinname="Y Output Value" dstnodeid="12" dstpinname="SkeletonJoints ToXYZ">
+   </LINK>
+   <LINK srcnodeid="60" srcpinname="Y Output Value" dstnodeid="13" dstpinname="SkeletonJoints From LIVE XYZ">
+   </LINK>
+   <LINK srcnodeid="59" srcpinname="Y Output Value" dstnodeid="12" dstpinname="SkeletonJoints From LIVE XYZ">
+   </LINK>
+   <LINK srcnodeid="59" srcpinname="Y Output Value" dstnodeid="13" dstpinname="SkeletonJoints ToXYZ">
+   </LINK>
+   <LINK srcnodeid="58" srcpinname="Y Output Value" dstnodeid="13" dstpinname="SkeletonJoints From StoredXYZ">
+   </LINK>
+   <LINK srcnodeid="57" srcpinname="Y Output Value" dstnodeid="12" dstpinname="SkeletonJoints From StoredXYZ">
    </LINK>
    </PATCH>

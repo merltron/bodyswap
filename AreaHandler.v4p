@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\_GIT\bodyswap\AreaHandler.v4p" scrollx="330" scrolly="0" systemname="AreaHandler" filename="D:\_GIT\bodyswap\AreaHandler.v4p">
+   <PATCH nodename="D:\GIT\BodySwapMer\AreaHandler.v4p" scrollx="450" scrolly="4410" systemname="AreaHandler" filename="D:\_GIT\bodyswap\AreaHandler.v4p">
    <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="4">
    <BOUNDS type="Node" left="3975" top="7590" width="100" height="100">
    </BOUNDS>
@@ -124,7 +124,7 @@
    </LINK>
    <LINK srcnodeid="13" srcpinname="Output" dstnodeid="9" dstpinname="Color">
    </LINK>
-   <BOUNDS type="Window" left="615" top="1530" width="15540" height="9390">
+   <BOUNDS type="Window" left="2745" top="2370" width="17685" height="7845">
    </BOUNDS>
    <NODE systemname="myarea" filename="myarea.v4p" nodename="myarea.v4p" componentmode="Hidden" id="20">
    <BOUNDS type="Node" left="465" top="9120" width="100" height="100">
@@ -798,86 +798,20 @@
    <PIN pinname="Looking Away" visible="1">
    </PIN>
    </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="119">
-   <BOUNDS type="Box" left="4995" top="2250" width="780" height="570">
-   </BOUNDS>
-   <BOUNDS type="Node" left="4995" top="2250" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Default" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="2">
-   </PIN>
-   <PIN pinname="Show SliceIndex" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="120" srcpinname="Looking Away" dstnodeid="119" dstpinname="Input String">
-   </LINK>
-   <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="117">
-   <BOUNDS type="Node" left="6075" top="2685" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Index" slicecount="1" values="1">
-   </PIN>
-   </NODE>
-   <NODE id="94" systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" left="3735" top="2505" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1" pintype="Input" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Output" visible="1" pintype="Output">
-   </PIN>
-   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Bin Size" pintype="Input" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Index" pintype="Input" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Output Bins" pintype="Output" visible="1">
-   </PIN>
-   <PIN pinname="ID" pintype="Output" visible="-1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="120" srcpinname="Looking Away" dstnodeid="94" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="120" srcpinname="Looking Away" dstnodeid="117" dstpinname="Input">
-   </LINK>
    <LINK srcnodeid="93" srcpinname="Output Node" dstnodeid="120" dstpinname="Kinect Runtime">
    </LINK>
-   <NODE systemname="LookAwayTester" filename="LookAwayTester.v4p" nodename="LookAwayTester.v4p" componentmode="Hidden" id="123">
-   <BOUNDS type="Node" left="6111" top="3127" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="3751" top="570" width="4720" height="6225">
-   </BOUNDS>
-   <BOUNDS type="Window" left="-1" top="-1" width="4720" height="6225">
-   </BOUNDS>
-   </NODE>
-   <LINK srcnodeid="117" srcpinname="Output" dstnodeid="123" dstpinname="Input 1">
-   </LINK>
    <NODE systemname="LookAwayTester" filename="LookAwayTester.v4p" nodename="LookAwayTester.v4p" componentmode="Hidden" id="124">
-   <BOUNDS type="Node" left="3756" top="3097" width="0" height="0">
+   <BOUNDS type="Node" left="6171" top="2152" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="1396" top="540" width="4720" height="6225">
+   <BOUNDS type="Box" left="3811" top="0" width="4720" height="6225">
    </BOUNDS>
-   <BOUNDS type="Window" left="2910" top="6540" width="4710" height="6225">
+   <BOUNDS type="Window" left="2925" top="3585" width="5250" height="7230">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
    <PIN pinname="Debug Color Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="94" srcpinname="Output" dstnodeid="124" dstpinname="Input 1">
-   </LINK>
    <LINK srcnodeid="124" srcpinname="Debug Color Output" dstnodeid="80" dstpinname="Color">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="125">
