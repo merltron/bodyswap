@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\GIT\BodySwapMer\body-swap-mesh.v4p" scrollx="0" scrolly="7560" systemname="body-swap-mesh" filename="D:\_GIT\bodyswap\body-swap-mesh.v4p">
+   <PATCH nodename="D:\GIT\BodySwapMer\body-swap-mesh.v4p" scrollx="1605" scrolly="10425" systemname="body-swap-mesh" filename="D:\_GIT\bodyswap\body-swap-mesh.v4p">
    <BOUNDS type="Window" left="1695" top="870" width="24495" height="13845">
    </BOUNDS>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="3" systemname="IOBox (String)">
@@ -855,7 +855,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="5415" top="16035" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="16665" top="3600" width="7695" height="6405">
+   <BOUNDS type="Window" left="26640" top="4695" width="7695" height="6405">
    </BOUNDS>
    <PIN pinname="View" visible="1">
    </PIN>
@@ -1041,7 +1041,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2355" top="765" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1051,7 +1051,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -1697,7 +1697,7 @@
    </PIN>
    <PIN pinname="Alpha" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Value" slicecount="1" values="96">
+   <PIN pinname="Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="455" srcpinname="Output" dstnodeid="452" dstpinname="Color Input">
@@ -1749,9 +1749,9 @@
    <LINK srcnodeid="394" srcpinname="Y Output Value" dstnodeid="395" dstpinname="Y Input Value">
    </LINK>
    <NODE systemname="RenderState (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="RenderState (DX11)" componentmode="Hidden" id="497">
-   <BOUNDS type="Node" left="10485" top="15930" width="100" height="100">
+   <BOUNDS type="Node" left="10665" top="16455" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="10485" top="15930" width="3000" height="3000">
+   <BOUNDS type="Box" left="10665" top="16455" width="3000" height="3000">
    </BOUNDS>
    <PIN pinname="Render State" visible="1">
    </PIN>
@@ -2085,7 +2085,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="14100" top="16110" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="3.14">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1.02">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -2203,6 +2203,8 @@
    </PIN>
    <PIN pinname="Transform" visible="1">
    </PIN>
+   <PIN pinname="Enabled" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <LINK srcnodeid="535" srcpinname="Transform Out" dstnodeid="531" dstpinname="Transform In">
    </LINK>
@@ -2268,8 +2270,6 @@
    </LINK>
    <LINK srcnodeid="497" srcpinname="Render State" dstnodeid="431" dstpinname="Render State">
    </LINK>
-   <LINK srcnodeid="497" srcpinname="Render State" dstnodeid="525" dstpinname="Render State">
-   </LINK>
    <LINK srcnodeid="533" srcpinname="Texture Out" dstnodeid="531" dstpinname="Texture">
    </LINK>
    <LINK srcnodeid="539" srcpinname="Transform Out" dstnodeid="535" dstpinname="Transform In">
@@ -2277,5 +2277,35 @@
    <LINK srcnodeid="535" srcpinname="Transform Out" dstnodeid="531" dstpinname="Transform">
    </LINK>
    <LINK srcnodeid="537" srcpinname="Layer" dstnodeid="450" dstpinname="Layer 4">
+   </LINK>
+   <LINK srcnodeid="525" srcpinname="Layer" dstnodeid="450" dstpinname="Layer 2">
+   </LINK>
+   <NODE systemname="RenderState (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="RenderState (DX11)" componentmode="Hidden" id="541">
+   <BOUNDS type="Node" left="10905" top="15255" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="10905" top="15255" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Render State" visible="1">
+   </PIN>
+   <PIN pinname="Blend Mode" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="541" srcpinname="Render State" dstnodeid="525" dstpinname="Render State">
+   </LINK>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="542">
+   <BOUNDS type="Box" left="11415" top="14445" width="1590" height="270">
+   </BOUNDS>
+   <BOUNDS type="Node" left="11415" top="14445" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="Add">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="Disabled">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="542" srcpinname="Output Enum" dstnodeid="541" dstpinname="Blend Mode">
    </LINK>
    </PATCH>
