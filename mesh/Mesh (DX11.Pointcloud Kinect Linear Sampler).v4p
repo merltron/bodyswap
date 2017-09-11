@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\_GIT\bodyswap\mesh\Mesh (DX11.Pointcloud Kinect Linear Sampler).v4p" systemname="Mesh (DX11.Pointcloud Kinect Linear Sampler)" filename="D:\GIT\BodySwapMer\mesh\Mesh (DX11.Pointcloud Kinect Linear Sampler).v4p" scrollx="0" scrolly="90">
-   <BOUNDS type="Window" left="8820" top="5055" width="14025" height="8160">
+   <PATCH nodename="D:\GIT\BodySwapMer\mesh\Mesh (DX11.Pointcloud Kinect Linear Sampler).v4p" systemname="Mesh (DX11.Pointcloud Kinect Linear Sampler)" filename="D:\GIT\BodySwapMer\mesh\Mesh (DX11.Pointcloud Kinect Linear Sampler).v4p" scrollx="0" scrolly="90">
+   <BOUNDS type="Window" left="11370" top="5265" width="14025" height="8160">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
