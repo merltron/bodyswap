@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\_GIT\bodyswap\BackgroundFileTexture.v4p" scrollx="0" scrolly="1485" systemname="BackgroundFileTexture" filename="D:\_GIT\bodyswap\BackgroundFileTexture.v4p">
+   <PATCH nodename="D:\GIT\BodySwapMer\BackgroundFileTexture.v4p" scrollx="0" scrolly="1485" systemname="BackgroundFileTexture" filename="D:\_GIT\bodyswap\BackgroundFileTexture.v4p">
    <NODE systemname="Box (DX11.Geometry)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Box (DX11.Geometry)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="1575" top="6090" width="100" height="100">
    </BOUNDS>
@@ -115,7 +115,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4860" top="3330" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="C:\2_ART\_2017\_FUTURE_NOWS_II\HB-Arch.jpg">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="HB-Arch.jpg">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -254,7 +254,7 @@
    </LINK>
    <LINK srcnodeid="7" srcpinname="SizeXY" dstnodeid="11" dstpinname="JointPositionsRGBXY">
    </LINK>
-   <BOUNDS type="Window" left="930" top="645" width="6360" height="8805">
+   <BOUNDS type="Window" left="930" top="645" width="12450" height="8805">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -280,4 +280,6 @@
    </NODE>
    <LINK srcnodeid="18" srcpinname="Output" dstnodeid="1" dstpinname="Ambient Color">
    </LINK>
+   <PACK Name="dx11" Version="1.0.2">
+   </PACK>
    </PATCH>
