@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\GIT\BodySwapMer\GetBones.v4p" systemname="GetBones" filename="C:\Users\dom\Desktop\MerlinKinect\GetBones.v4p" scrollx="450" scrolly="195">
+   <PATCH nodename="C:\_GIT\bodyswap-absolutenew\bodyswap-absnew\GetBones.v4p" systemname="GetBones" filename="C:\Users\dom\Desktop\MerlinKinect\GetBones.v4p" scrollx="240" scrolly="0">
    <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="405" top="6525" width="100" height="100">
    </BOUNDS>
@@ -76,7 +76,7 @@
    </NODE>
    <LINK srcnodeid="3" srcpinname="Output" dstnodeid="8" dstpinname="Y Input Value">
    </LINK>
-   <BOUNDS type="Window" left="6270" top="1095" width="16095" height="10440">
+   <BOUNDS type="Window" left="4200" top="2865" width="19980" height="9255">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -902,8 +902,8 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="80" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Index">
+   <LINK srcnodeid="75" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Index">
    </LINK>
-   <LINK srcnodeid="79" srcpinname="Y Output Value" dstnodeid="3" dstpinname="Index">
+   <LINK srcnodeid="76" srcpinname="Y Output Value" dstnodeid="3" dstpinname="Index">
    </LINK>
    </PATCH>

@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\GIT\BodySwapMer\body-swap-mesh.v4p" scrollx="1605" scrolly="10425" systemname="body-swap-mesh" filename="D:\_GIT\bodyswap\body-swap-mesh.v4p">
-   <BOUNDS type="Window" left="1695" top="870" width="24495" height="13845">
+   <PATCH nodename="C:\_GIT\bodyswap-absolutenew\bodyswap-absnew\body-swap-mesh.v4p" scrollx="0" scrolly="0" systemname="body-swap-mesh" filename="D:\_GIT\bodyswap\body-swap-mesh.v4p">
+   <BOUNDS type="Window" left="-120" top="-120" width="28980" height="16380">
    </BOUNDS>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="3" systemname="IOBox (String)">
    <BOUNDS type="Node" left="3270" top="555" width="5100" height="450">
@@ -850,12 +850,12 @@
    </LINK>
    <LINK srcnodeid="332" srcpinname="Transform Out" dstnodeid="331" dstpinname="View">
    </LINK>
-   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" id="335" stayontop="1">
+   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="Hidden" id="335" stayontop="1">
    <BOUNDS type="Node" left="5415" top="16035" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="5415" top="16035" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="26640" top="4695" width="7695" height="6405">
+   <BOUNDS type="Window" left="17760" top="2265" width="7695" height="6405">
    </BOUNDS>
    <PIN pinname="View" visible="1">
    </PIN>
@@ -1097,7 +1097,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4635" top="1365" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="..\BodySwap\KinectTwoPeople.xef">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="C:\_GIT\KinectTwoPeople.xef">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -1584,12 +1584,12 @@
    </NODE>
    <LINK srcnodeid="435" srcpinname="Y Output Value" dstnodeid="436" dstpinname="Initial InterestXYZ">
    </LINK>
-   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="FullScreen" id="441" stayontop="0">
+   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="Hidden" id="441" stayontop="0">
    <BOUNDS type="Node" left="12930" top="19725" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="12930" top="19725" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="28680" top="-120" width="38640" height="24180">
+   <BOUNDS type="Window" left="14400" top="6900" width="14220" height="7785">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>
